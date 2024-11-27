@@ -31,6 +31,14 @@ Some features of Azure AI Vision include:
 2. Face: capabilities that enable you to build face detection and facial recognition solutions.
 3. Optical Character Recognition (OCR): capabilities for extracting printed or handwritten text from images, enabling access to a digital version of the scanned text.
 
+Multi-modal models
+An image encoder extracts features from images based on pixel values and combines them with text embeddings created by a language encoder. The overall model encapsulates relationships between natural language token embeddings and image features, as shown here:
+![image](https://github.com/user-attachments/assets/b81e6883-e99d-4a58-93aa-133588a67554)
+The Microsoft Florence model is just such a model. Trained with huge volumes of captioned images from the Internet, it includes both a language encoder and an image encoder. 
+![image](https://github.com/user-attachments/assets/1e333911-9c37-4ec8-baa8-482af8803434)
+
+
+
 **Understand natural language processing**
 NLP enables you to create software that can:
 
