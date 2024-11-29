@@ -27,7 +27,7 @@ Some features of Azure AI Vision include:
 1. Image Analysis: capabilities for analyzing images and video, and extracting descriptions, tags, objects, and text.
 2. Face: capabilities that enable you to build face detection and facial recognition solutions.
 3. Optical Character Recognition (OCR): capabilities for extracting printed or handwritten text from images, enabling access to a digital version of the scanned text.
-
+-----
 One of the most common machine learning model architectures for computer vision is a **convolutional neural network (CNN)**, a type of deep learning architecture. CNNs use filters to extract numeric feature maps from images, and then feed the feature values into a deep learning model to generate a label prediction.
 
 Transformers and multi-modal models
@@ -52,7 +52,7 @@ Azure AI Vision supports multiple image analysis capabilities, including:
 3. Detection of thousands of common objects in images.
 4. Tagging visual features in images
 These tasks, and more, can be performed in **Azure AI Vision Studio**
-
+-----
 **Face detection** involves identifying regions of an image that contain a human face, typically by returning bounding box coordinates that form a rectangle around the face
 
 Microsoft Azure provides multiple Azure AI services that you can use to detect and analyze faces, including:
@@ -60,6 +60,13 @@ Microsoft Azure provides multiple Azure AI services that you can use to detect a
 2. **Azure AI Video Indexer**, which you can use to detect and identify faces in a video.
 3. **Azure AI Face**, which offers pre-built algorithms that can detect, recognize, and analyze faces.
 Of these, Face offers the widest range of facial analysis capabilities.
+
+There are some considerations that can help improve the accuracy of the detection in the images:
+1. Image format - supported images are JPEG, PNG, GIF, and BMP.
+2. File size - 6 MB or smaller.
+3. Face size range - from 36 x 36 pixels up to 4096 x 4096 pixels. Smaller or larger faces will not be detected.
+4. Other issues - face detection can be impaired by extreme face angles, extreme lighting, and occlusion (objects blocking the face such as a hand).
+you can use **Vision Studio** to explore the capabilities of Azure AI Vision.
 
 **Responsible AI use**
 To support Microsoft's Responsible AI Standard, Azure AI Face and Azure AI Vision have a Limited Access policy.
@@ -77,7 +84,30 @@ The Limited Access policy requires customers to submit an intake form to access 
 Azure resources for Face
 1. **Face**: track utilization and costs for Face separately.
 2. **Azure AI services**: with many other Azure AI services such as Azure AI Content Safety, Azure AI Language, and others.
-   
+-----
+Optical character recognition (OCR) enables artificial intelligence (AI) systems to read text in images, enabling applications to extract information from photographs, scanned documents, and other sources of digitized text.
+
+**Uses of OCR**
+Automating text processing can improve the speed and efficiency of work by removing the need for manual data entry. The ability to recognize printed and handwritten text in images is beneficial in scenarios such as note taking, digitizing medical records or historical documents, scanning checks for bank deposits, and more.
+
+The ability for computer systems to process written and printed text is an area of AI where computer vision intersects with **natural language processing**. Vision capabilities are needed to "read" the text, and then natural language processing capabilities make sense of it. Azure AI Vision's Read API is the OCR engine that powers text extraction from **images, PDFs, and TIFF files**. **The Read API, otherwise known as Read OCR engine**, uses the latest recognition models and is optimized for images that have a significant amount of text or have considerable visual noise. 
+
+Calling the Read API returns results arranged into the following hierarchy:
+Pages - One for each page of text, including information about the page size and orientation.
+Lines - The lines of text on a page.
+Words - The words in a line of text, including the bounding box coordinates and text itself.
+
+![image](https://github.com/user-attachments/assets/85b81319-4352-4f5a-8961-668eeb6181bd)
+
+Azure resources for AI Vision
+1. Azure AI Vision
+2. Azure AI Services
+Once you've created a resource, there are several ways to use Azure AI Vision's Read API:
+1. Vision Studio
+2. REST API
+3. Software Development Kits (SDKs): Python, C#, JavaScript
+
+
 # **Understand natural language processing**
 NLP enables you to create software that can:
 
@@ -90,13 +120,6 @@ You can use Microsoft's **Azure AI Language** to build natural language processi
 Microsoft's **Azure AI Speech** is another service that can be used to build natural language processing solutions. Azure AI Speech features include speech recognition and synthesis, real-time translations, conversation transcriptions, and more.
 Microsoft's **Azure AI Translator** uses a **Neural Machine Translation (NMT) model for translation**, which analyzes the semantic context of the text and renders a more accurate and complete translation as a result.
 You can explore Azure AI Language features in the Azure Language Studio and Azure AI Speech features in the Azure Speech Studio. The service features are available for use and testing in the studios and other programming languages.
-
-There are some considerations that can help improve the accuracy of the detection in the images:
-1. Image format - supported images are JPEG, PNG, GIF, and BMP.
-2. File size - 6 MB or smaller.
-3. Face size range - from 36 x 36 pixels up to 4096 x 4096 pixels. Smaller or larger faces will not be detected.
-4. Other issues - face detection can be impaired by extreme face angles, extreme lighting, and occlusion (objects blocking the face such as a hand).
-you can use **Vision Studio** to explore the capabilities of Azure AI Vision.
 
 # **Document intelligence in Microsoft Azure**
 You can use Microsoft's **Azure AI Document Intelligence** to build solutions that manage and accelerate data collection from scanned documents. Features of Azure AI Document Intelligence help automate document processing in applications and workflows, enhance data-driven strategies, and enrich document search capabilities. The service features are available for use and testing in the **Document Intelligence Studio and other programming languages**.
