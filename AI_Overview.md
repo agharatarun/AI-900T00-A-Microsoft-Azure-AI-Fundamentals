@@ -165,6 +165,34 @@ Resources for conversational language understanding
 
 When you are satisfied with the results from the training and testing, you can publish your Conversational Language Understanding application to a prediction resource for consumption.
 
+-----
+AI speech capabilities enable us to manage home and auto systems with voice instructions, get answers from computers for spoken questions, generate captions from audio, and much more.
+To enable this kind of interaction, the AI system must support at least two capabilities:
+1. Speech recognition - the ability to detect and interpret spoken input
+2. Speech synthesis - the ability to generate spoken output
+Azure AI Speech provides speech to text, text to speech, and speech translation capabilities through speech recognition and synthesis.
+
+**Speech recognition** takes the spoken word and converts it into data that can be processed - often by transcribing it into text. 
+An **acoustic model** that converts the audio signal into phonemes (representations of specific sounds). 
+A **language model** that maps phonemes to words, usually using a statistical algorithm that predicts the most probable sequence of words based on the phonemes.
+
+**Speech synthesis** is concerned with vocalizing data, usually by converting text to speech. A speech synthesis solution typically requires the following information:
+1. The text to be spoken
+2. The voice to be used to vocalize the speech
+To synthesize speech, the system typically tokenizes the text to break it down into individual words, and assigns phonetic sounds to each word. It then breaks the phonetic transcription into prosodic units (such as phrases, clauses, or sentences) to create phonemes that will be converted to audio format. These phonemes are then synthesized as audio and can be assigned a particular voice, speaking rate, pitch, and volume.
+
+Azure AI Speech service, which supports many capabilities, including:
+1. Speech to text: Real-time transcription & Batch transcription
+2. Text to speech: The service includes multiple pre-defined voices with support for multiple languages and regional pronunciation, including neural voices that leverage neural networks to overcome common limitations in speech synthesis with regard to intonation, resulting in a more natural sounding voice.
+   
+A separate module covers speech translation in Azure AI services.
+
+Azure AI Speech is available for use through several tools and programming languages including:
+Studio interfaces
+Command Line Interface (CLI)
+REST APIs and Software Development Kits (SDKs)
+You can create Azure AI Speech projects using user interfaces with Speech Studio or Azure AI Studio.
+
 # **Document intelligence in Microsoft Azure**
 You can use Microsoft's **Azure AI Document Intelligence** to build solutions that manage and accelerate data collection from scanned documents. Features of Azure AI Document Intelligence help automate document processing in applications and workflows, enhance data-driven strategies, and enrich document search capabilities. The service features are available for use and testing in the **Document Intelligence Studio and other programming languages**.
 **Knowledge mining** is the term used to describe solutions that involve extracting information from large volumes of often unstructured data to create a searchable knowledge store. One Microsoft knowledge mining solution is **Azure AI Search**, a private, enterprise, search solution that has tools for building indexes.
