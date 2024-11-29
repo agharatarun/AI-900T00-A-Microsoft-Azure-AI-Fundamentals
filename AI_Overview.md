@@ -193,6 +193,10 @@ Command Line Interface (CLI)
 REST APIs and Software Development Kits (SDKs)
 You can create Azure AI Speech projects using user interfaces with Speech Studio or Azure AI Studio.
 
+**Resources for Azure AI Speech**
+A **Speech resource** - manage access and billing for the resource separately from other services.
+An Azure AI services resource - Use Azure AI Speech in combination with other Azure AI services, and you want to manage access and billing for these services together.
+
 # **Document intelligence in Microsoft Azure**
 You can use Microsoft's **Azure AI Document Intelligence** to build solutions that manage and accelerate data collection from scanned documents. Features of Azure AI Document Intelligence help automate document processing in applications and workflows, enhance data-driven strategies, and enrich document search capabilities. The service features are available for use and testing in the **Document Intelligence Studio and other programming languages**.
 **Knowledge mining** is the term used to describe solutions that involve extracting information from large volumes of often unstructured data to create a searchable knowledge store. One Microsoft knowledge mining solution is **Azure AI Search**, a private, enterprise, search solution that has tools for building indexes.
