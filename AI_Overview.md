@@ -1,7 +1,4 @@
-# Microsoft Azure AI Fundamentals: AI Overview
-
-
-**What is AI?**
+# **What is AI?**
 Simply put, AI is software that imitates human behaviors and capabilities. Key workloads include:
 
 1. Machine learning - This is often the foundation for an AI system, and is the way we "teach" a computer model to make predictions and draw conclusions from data.
@@ -17,7 +14,7 @@ Simply put, AI is software that imitates human behaviors and capabilities. Key w
 3. Data metric visualization: analyze and optimize your experiments with visualization.
 4. Notebooks: write and run your own code in managed Jupyter Notebook servers that are directly integrated in the studio.
 
-**Understand computer vision**
+# **Understand computer vision**
 1. Image classification - Image classification involves training a machine learning model to **classify images based on their contents**.
 2. Object detection - Object detection machine learning models are trained to classify individual objects within an image, and **identify their location with a bounding box**.
 3. Semantic segmentation - Semantic segmentation is an advanced machine learning technique in which **individual pixels in the image are classified according to the object to which they belong**.
@@ -37,7 +34,7 @@ Transformers and multi-modal models
 
 **Transformers** work by processing huge volumes of data, and encoding language tokens (representing individual words or phrases) as vector-based embeddings (arrays of numeric values). You can think of an embedding as representing a set of dimensions that each represent some semantic attribute of the token. The embeddings are created such that tokens that are commonly used in the same context are closer together dimensionally than unrelated words.
 
-An image encoder extracts features from images based on pixel values and combines them with text embeddings created by a language encoder. The overall model encapsulates relationships between natural language token embeddings and image features, as shown here:
+The success of transformers as a way to build language models has led AI researchers to consider whether the same approach would be effective for image data. The result is the development of **multi-modal models**, in which the model is trained using a large volume of captioned images, with no fixed labels. An image encoder extracts features from images based on pixel values and combines them with text embeddings created by a language encoder. The overall model encapsulates relationships between natural language token embeddings and image features, as shown here:
 
 ![image](https://github.com/user-attachments/assets/b81e6883-e99d-4a58-93aa-133588a67554)
 
@@ -46,9 +43,7 @@ The Microsoft Florence model is just such a model. Trained with huge volumes of 
 ![image](https://github.com/user-attachments/assets/55cb0433-ddcf-4df9-8bf4-88a9d3c81e5f)
 
 
-
-
-**Understand natural language processing**
+# **Understand natural language processing**
 NLP enables you to create software that can:
 
 1. Analyze and interpret text in documents, email messages, and other sources.
@@ -61,11 +56,22 @@ Microsoft's **Azure AI Speech** is another service that can be used to build nat
 Microsoft's **Azure AI Translator** uses a **Neural Machine Translation (NMT) model for translation**, which analyzes the semantic context of the text and renders a more accurate and complete translation as a result.
 You can explore Azure AI Language features in the Azure Language Studio and Azure AI Speech features in the Azure Speech Studio. The service features are available for use and testing in the studios and other programming languages.
 
-**Document intelligence in Microsoft Azure**
+Azure resources for Azure AI Vision service
+1. Azure AI Vision
+2. Azure AI services: includes Azure AI Vision along with many other Azure AI services; such as Azure AI Language, Azure AI Custom Vision, Azure AI Translator, and others
+
+Azure AI Vision supports multiple image analysis capabilities, including:
+1. Optical character recognition (OCR) - extracting text from images.
+2. Generating captions and descriptions of images.
+3. Detection of thousands of common objects in images.
+4. Tagging visual features in images
+These tasks, and more, can be performed in **Azure AI Vision Studio**
+
+# **Document intelligence in Microsoft Azure**
 You can use Microsoft's **Azure AI Document Intelligence** to build solutions that manage and accelerate data collection from scanned documents. Features of Azure AI Document Intelligence help automate document processing in applications and workflows, enhance data-driven strategies, and enrich document search capabilities. The service features are available for use and testing in the **Document Intelligence Studio and other programming languages**.
 **Knowledge mining** is the term used to describe solutions that involve extracting information from large volumes of often unstructured data to create a searchable knowledge store. One Microsoft knowledge mining solution is **Azure AI Search**, a private, enterprise, search solution that has tools for building indexes.
 
-**Generative AI in Microsoft Azure**
+# **Generative AI in Microsoft Azure**
 **Azure OpenAI Service** is Microsoft's cloud solution for deploying, customizing, and hosting generative AI models. The service features are available for use and testing with Azure AI Foundry, Microsoft's platform for designing enterprise-grade AI solutions. You can use the **Azure AI Foundry** portal to manage, develop, and customize generative AI models.
 
 **Understand Responsible AI**
