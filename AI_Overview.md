@@ -15,6 +15,8 @@ Simply put, AI is software that imitates human behaviors and capabilities. Key w
 4. Notebooks: write and run your own code in managed Jupyter Notebook servers that are directly integrated in the studio.
 
 # **Understand computer vision**
+https://portal.vision.cognitive.azure.com/gallery/featured
+
 1. Image classification - Image classification involves training a machine learning model to **classify images based on their contents**.
 2. Object detection - Object detection machine learning models are trained to classify individual objects within an image, and **identify their location with a bounding box**.
 3. Semantic segmentation - Semantic segmentation is an advanced machine learning technique in which **individual pixels in the image are classified according to the object to which they belong**.
@@ -109,8 +111,9 @@ Once you've created a resource, there are several ways to use Azure AI Vision's 
 
 
 # **Understand natural language processing**
-NLP enables you to create software that can:
+https://language.cognitive.azure.com
 
+NLP enables you to create software that can:
 1. Analyze and interpret text in documents, email messages, and other sources.
 2. Interpret spoken language, and synthesize speech responses.
 3. Automatically translate spoken or written phrases between languages.
@@ -120,6 +123,41 @@ You can use Microsoft's **Azure AI Language** to build natural language processi
 Microsoft's **Azure AI Speech** is another service that can be used to build natural language processing solutions. Azure AI Speech features include speech recognition and synthesis, real-time translations, conversation transcriptions, and more.
 Microsoft's **Azure AI Translator** uses a **Neural Machine Translation (NMT) model for translation**, which analyzes the semantic context of the text and renders a more accurate and complete translation as a result.
 You can explore Azure AI Language features in the Azure Language Studio and Azure AI Speech features in the Azure Speech Studio. The service features are available for use and testing in the studios and other programming languages.
+
+-----
+**Text Analysis with the Language Service**
+
+Azure AI Language is a cloud-based service that includes features for understanding and analyzing text. Azure AI Language includes various features that support sentiment analysis, key phrase identification, text summarization, and conversational language understanding.
+
+Frequency analysis: **Term frequency - inverse document frequency (TF-IDF)** is a common technique in which a score is calculated based on how often a word or term appears in one document compared to its more general frequency across the entire collection of documents. Using this technique, a high degree of relevance is assumed for words that appear frequently in a particular document, but relatively infrequently across a wide range of other documents.
+
+text classification: Another useful text analysis technique is to use a classification algorithm, such as logistic regression, to train a machine learning model that classifies text based on a known set of categorizations. A common application of this technique is to train a model that classifies text as positive or negative in order to perform sentiment analysis or opinion mining.
+
+![image](https://github.com/user-attachments/assets/20e66364-c096-4219-942b-afc6d7cdb3b9)
+
+Azure AI Language is a part of the Azure AI services offerings that can perform advanced natural language processing over unstructured text. Azure AI Language's text analysis features include:
+
+1. Named entity recognition identifies people, places, events, and more. This feature can also be customized to extract custom categories.
+2. Entity linking identifies known entities together with a link to Wikipedia.
+3. Personal identifying information (PII) detection identifies personally sensitive information, including personal health information (PHI).
+4. Language detection identifies the language of the text and returns a language code such as "en" for English.
+5. Sentiment analysis and opinion mining identifies whether text is positive or negative.
+6. Summarization summarizes text by identifying the most important information.
+6. Key phrase extraction lists the main concepts from unstructured text.
+
+Resource for Azure AI Language
+1. A **Language** resource - manage access and billing for the resource separately from other services.
+2. An **Azure AI services** resource - choose this resource type if you plan to use Azure AI Language in combination with other Azure AI services
+
+-----
+**Question answering with the Language Service**
+You can easily create a question answering solution on Microsoft Azure using Azure AI Language service. Azure AI Language includes a custom question answering feature that enables you to create a knowledge base of question and answer pairs that can be queried using natural language input.
+You can use **Azure AI Language Studio** to create, train, publish, and manage question answering projects. You can write code to create and manage projects using the Azure AI Language REST API or SDK. However, in most scenarios it is easier to use the Language Studio.
+
+-----
+**conversational language understanding**
+
+
 
 # **Document intelligence in Microsoft Azure**
 You can use Microsoft's **Azure AI Document Intelligence** to build solutions that manage and accelerate data collection from scanned documents. Features of Azure AI Document Intelligence help automate document processing in applications and workflows, enhance data-driven strategies, and enrich document search capabilities. The service features are available for use and testing in the **Document Intelligence Studio and other programming languages**.
