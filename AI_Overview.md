@@ -42,7 +42,42 @@ The Microsoft Florence model is just such a model. Trained with huge volumes of 
 
 ![image](https://github.com/user-attachments/assets/55cb0433-ddcf-4df9-8bf4-88a9d3c81e5f)
 
+Azure resources for Azure AI Vision service
+1. **Azure AI Vision**
+2. **Azure AI services**: includes Azure AI Vision along with many other Azure AI services; such as Azure AI Language, Azure AI Custom Vision, Azure AI Translator, and others
 
+Azure AI Vision supports multiple image analysis capabilities, including:
+1. Optical character recognition (OCR) - extracting text from images.
+2. Generating captions and descriptions of images.
+3. Detection of thousands of common objects in images.
+4. Tagging visual features in images
+These tasks, and more, can be performed in **Azure AI Vision Studio**
+
+**Face detection** involves identifying regions of an image that contain a human face, typically by returning bounding box coordinates that form a rectangle around the face
+
+Microsoft Azure provides multiple Azure AI services that you can use to detect and analyze faces, including:
+1. **Azure AI Vision**, which offers face detection and some basic face analysis, such as returning the bounding box coordinates around an image.
+2. **Azure AI Video Indexer**, which you can use to detect and identify faces in a video.
+3. **Azure AI Face**, which offers pre-built algorithms that can detect, recognize, and analyze faces.
+Of these, Face offers the widest range of facial analysis capabilities.
+
+**Responsible AI use**
+To support Microsoft's Responsible AI Standard, Azure AI Face and Azure AI Vision have a Limited Access policy.
+Anyone can use the Face service to:
+1. Detect the location of faces in an image.
+2. Determine if a person is wearing glasses.
+3. Determine if there's occlusion, blur, noise, or over/under exposure for any of the faces.
+4. Return the head pose coordinates for each face in an image.
+
+The Limited Access policy requires customers to submit an intake form to access additional Azure AI Face service capabilities including:
+1. **Face verification**: the ability to compare faces for similarity.
+2. **Face identification**: the ability to identify named individuals in an image.
+3. **Liveness detection**: the ability to detect and mitigate instances of recurring content and/or behaviors that indicate a violation of policies (eg. such as if the input video stream is real or fake).
+
+Azure resources for Face
+1. **Face**: track utilization and costs for Face separately.
+2. **Azure AI services**: with many other Azure AI services such as Azure AI Content Safety, Azure AI Language, and others.
+   
 # **Understand natural language processing**
 NLP enables you to create software that can:
 
@@ -56,16 +91,12 @@ Microsoft's **Azure AI Speech** is another service that can be used to build nat
 Microsoft's **Azure AI Translator** uses a **Neural Machine Translation (NMT) model for translation**, which analyzes the semantic context of the text and renders a more accurate and complete translation as a result.
 You can explore Azure AI Language features in the Azure Language Studio and Azure AI Speech features in the Azure Speech Studio. The service features are available for use and testing in the studios and other programming languages.
 
-Azure resources for Azure AI Vision service
-1. Azure AI Vision
-2. Azure AI services: includes Azure AI Vision along with many other Azure AI services; such as Azure AI Language, Azure AI Custom Vision, Azure AI Translator, and others
-
-Azure AI Vision supports multiple image analysis capabilities, including:
-1. Optical character recognition (OCR) - extracting text from images.
-2. Generating captions and descriptions of images.
-3. Detection of thousands of common objects in images.
-4. Tagging visual features in images
-These tasks, and more, can be performed in **Azure AI Vision Studio**
+There are some considerations that can help improve the accuracy of the detection in the images:
+1. Image format - supported images are JPEG, PNG, GIF, and BMP.
+2. File size - 6 MB or smaller.
+3. Face size range - from 36 x 36 pixels up to 4096 x 4096 pixels. Smaller or larger faces will not be detected.
+4. Other issues - face detection can be impaired by extreme face angles, extreme lighting, and occlusion (objects blocking the face such as a hand).
+you can use **Vision Studio** to explore the capabilities of Azure AI Vision.
 
 # **Document intelligence in Microsoft Azure**
 You can use Microsoft's **Azure AI Document Intelligence** to build solutions that manage and accelerate data collection from scanned documents. Features of Azure AI Document Intelligence help automate document processing in applications and workflows, enhance data-driven strategies, and enrich document search capabilities. The service features are available for use and testing in the **Document Intelligence Studio and other programming languages**.
