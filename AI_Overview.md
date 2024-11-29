@@ -31,11 +31,20 @@ Some features of Azure AI Vision include:
 2. Face: capabilities that enable you to build face detection and facial recognition solutions.
 3. Optical Character Recognition (OCR): capabilities for extracting printed or handwritten text from images, enabling access to a digital version of the scanned text.
 
-Multi-modal models
+One of the most common machine learning model architectures for computer vision is a **convolutional neural network (CNN)**, a type of deep learning architecture. CNNs use filters to extract numeric feature maps from images, and then feed the feature values into a deep learning model to generate a label prediction.
+
+Transformers and multi-modal models
+
+**Transformers** work by processing huge volumes of data, and encoding language tokens (representing individual words or phrases) as vector-based embeddings (arrays of numeric values). You can think of an embedding as representing a set of dimensions that each represent some semantic attribute of the token. The embeddings are created such that tokens that are commonly used in the same context are closer together dimensionally than unrelated words.
+
 An image encoder extracts features from images based on pixel values and combines them with text embeddings created by a language encoder. The overall model encapsulates relationships between natural language token embeddings and image features, as shown here:
+
 ![image](https://github.com/user-attachments/assets/b81e6883-e99d-4a58-93aa-133588a67554)
+
 The Microsoft Florence model is just such a model. Trained with huge volumes of captioned images from the Internet, it includes both a language encoder and an image encoder. 
-![image](https://github.com/user-attachments/assets/1e333911-9c37-4ec8-baa8-482af8803434)
+
+![image](https://github.com/user-attachments/assets/55cb0433-ddcf-4df9-8bf4-88a9d3c81e5f)
+
 
 
 
