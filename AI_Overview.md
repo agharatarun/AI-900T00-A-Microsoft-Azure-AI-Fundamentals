@@ -156,8 +156,14 @@ You can use **Azure AI Language Studio** to create, train, publish, and manage q
 
 -----
 **conversational language understanding**
+Azure AI Language service supports **conversational language understanding (CLU)**. You can use CLU to build language models that interpret the meaning of phrases in a conversational setting. One example of a CLU application is one that's able to turn devices on and off based on speech.
+To work with conversational language understanding (CLU), you need to take into account three core concepts: **utterances, entities, and intents**.
 
+Resources for conversational language understanding
+1. Azure AI Language: You can use a language resource for authoring and prediction.
+2. Azure AI services: A general resource that includes CLU along with many other Azure AI services. You can only use this type of resource for prediction.
 
+When you are satisfied with the results from the training and testing, you can publish your Conversational Language Understanding application to a prediction resource for consumption.
 
 # **Document intelligence in Microsoft Azure**
 You can use Microsoft's **Azure AI Document Intelligence** to build solutions that manage and accelerate data collection from scanned documents. Features of Azure AI Document Intelligence help automate document processing in applications and workflows, enhance data-driven strategies, and enrich document search capabilities. The service features are available for use and testing in the **Document Intelligence Studio and other programming languages**.
