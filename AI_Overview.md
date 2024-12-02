@@ -222,7 +222,7 @@ Azure AI Translator's application programming interface (API) offers some option
 1. **Profanity filtering**. Without any configuration, the service will translate the input text, without filtering out profanity. Profanity levels are typically culture-specific but you can control profanity translation by either marking the translated text as profane or by omitting it in the results.
 2. **Selective translation**. You can tag content so that it isn't translated. For example, you may want to tag code, a brand name, or a word/phrase that doesn't make sense when localized.
 
-# **Document intelligence in Microsoft Azure**
+# **Document intelligence & Knowledge Mining **
 
 https://documentintelligence.ai.azure.com/studio
 
@@ -239,6 +239,41 @@ Azure AI Document Intelligence consists of features grouped by model type:
 3. **Custom models** - can be trained to identify specific fields that are not included in the existing pretrained models. **Includes custom classification models and document field extraction models** such as the custom generative AI model and custom neural model.
 
 To use Azure AI Document Intelligence, create either a Document Intelligence or Azure AI services resource in your Azure subscription.
+
+-----
+
+https://learn.microsoft.com/en-us/training/modules/intro-to-azure-search/1-introduction
+
+**Azure AI Search** provides the infrastructure and tools to create search solutions that extract data from various structured, semi-structured, and non-structured documents.
+
+It's a Platform as a Service (PaaS) solution. Microsoft manages the infrastructure and availability, allowing your organization to benefit without the need to purchase or manage dedicated hardware resources.
+Azure AI Search exists to complement existing technologies and provides a programmable search engine built on Apache Lucene, an open-source software library. 
+
+Azure AI Search comes with the following features:
+
+1. **Data from any source**: accepts data from any source provided in **JSON format**, with auto crawling support for selected data sources in Azure.
+2. **Multiple options for search and analysis**: including vector search, full text, and hybrid search.
+3. **AI enrichment**: has Azure AI capabilities built in for image and text analysis from raw content.
+4. **Linguistic analysis**: offers analysis for 56 languages to intelligently handle phonetic matching or language-specific linguistics. Natural language processors available in Azure AI Search are also used by Bing and Office.
+5. **Configurable user experience**: has options for query syntax including vector queries, text search, hybrid queries, fuzzy search, autocomplete, geo-search filtering based on proximity to a physical location, and more.
+6. **Azure scale, security, and integration**: at the data layer, machine learning layer, and with Azure AI services and Azure OpenAI.
+
+**A search index contains your searchable content**. In an Azure AI Search solution, you create a search index by moving data through the indexing pipeline
+
+1. Start with a data source: the storage location of your original data artifacts, such as PDFs, video files, and images. For Azure AI Search, your data source could be files in Azure Storage, or text in a database such as Azure SQL Database or Azure Cosmos DB.
+2. Indexer: automates the movement data from the data source through document cracking and enrichment to indexing. An indexer automates a portion of data ingestion and exports the original file type to JSON (in an action called JSON serialization).  An indexer serializes a source document into JSON before passing it to a search engine for indexing. An indexer automates several steps of data ingestion, reducing the amount of code you need to write.
+3. Document cracking: the indexer opens files and extracts content.
+4. Enrichment: the indexer moves data through AI enrichment, which implements Azure AI on your original data to extract more information. AI enrichment is achieved by adding and combining skills in a skillset. A skillset defines the operations that extract and enrich data to make it searchable. These AI skills can be either built-in skills, such as text translation or Optical Character Recognition (OCR), or custom skills that you provide. Examples of AI enrichment include adding captions to a photo and evaluating text sentiment. AI enriched content can be sent to a knowledge store, which persists output from an AI enrichment pipeline in tables and blobs in Azure Storage for independent analysis or downstream processing. A skillset requires an indexer, but an indexer doesn't require a skillset. You can use indexers to create a search index from textual content in any supported data source. **Without AI skillsets, you can still perform full text search over indexes containing alphanumeric content.** Detecting the sentiment in content requires a skillset that includes the Sentiment Analysis skill.
+5. Push to index: the serialized JSON data populates the search index.
+6. The result is a populated search index which can be explored through queries. When users make a search query such as "coffee", the search engine looks for that information in the search index. A search index has a structure similar to a table, known as the index schema. A typical search index schema contains fields, the field's data type (such as string), and field attributes. The fields store searchable text, and the field attributes allow for actions such as filtering and sorting. Below is an example of a search index schema:
+
+A screenshot of the structure of an index schema in json including key phrases and image tags.
+
+![image](https://github.com/user-attachments/assets/6b41d070-3ab9-4946-89ea-834ad9509d44)
+
+Azure AI Search queries can be submitted as an HTTP or REST API request, with the response coming back as JSON. Queries can specify what fields are searched and returned, how search results are shaped, and how the results should be filtered or sorted. A query that doesn't specify the field to search will execute against all the searchable fields within the index.
+
+Azure AI Search supports two types of syntax: **simple and full Lucene**. Simple syntax covers all of the common query scenarios, while full Lucene is useful for advanced scenarios.
 
 # **Generative AI in Microsoft Azure**
 **Azure OpenAI Service** is Microsoft's cloud solution for deploying, customizing, and hosting generative AI models. The service features are available for use and testing with Azure AI Foundry, Microsoft's platform for designing enterprise-grade AI solutions. You can use the **Azure AI Foundry** portal to manage, develop, and customize generative AI models.
