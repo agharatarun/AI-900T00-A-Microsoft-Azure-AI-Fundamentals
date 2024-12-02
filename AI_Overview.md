@@ -184,8 +184,8 @@ A **language model** that maps phonemes to words, usually using a statistical al
 To synthesize speech, the system typically tokenizes the text to break it down into individual words, and assigns phonetic sounds to each word. It then breaks the phonetic transcription into prosodic units (such as phrases, clauses, or sentences) to create phonemes that will be converted to audio format. These phonemes are then synthesized as audio and can be assigned a particular voice, speaking rate, pitch, and volume.
 
 Azure AI Speech service, which supports many capabilities, including:
-1. Speech to text: Real-time transcription & Batch transcription
-2. Text to speech: The service includes multiple pre-defined voices with support for multiple languages and regional pronunciation, including neural voices that leverage neural networks to overcome common limitations in speech synthesis with regard to intonation, resulting in a more natural sounding voice.
+1. **Speech to text**: Real-time transcription & Batch transcription
+2. **Text to speech**: The service includes multiple pre-defined voices with support for multiple languages and regional pronunciation, including neural voices that leverage neural networks to overcome common limitations in speech synthesis with regard to intonation, resulting in a more natural sounding voice.
    
 A separate module covers speech translation in Azure AI services.
 
@@ -219,12 +219,26 @@ Text translation, Document translation & Custom translation (used to enable ente
 
 Azure AI Translator's application programming interface (API) offers some optional configuration to help you fine-tune the results that are returned, including:
 
-**Profanity filtering**. Without any configuration, the service will translate the input text, without filtering out profanity. Profanity levels are typically culture-specific but you can control profanity translation by either marking the translated text as profane or by omitting it in the results.
-**Selective translation**. You can tag content so that it isn't translated. For example, you may want to tag code, a brand name, or a word/phrase that doesn't make sense when localized.
+1. **Profanity filtering**. Without any configuration, the service will translate the input text, without filtering out profanity. Profanity levels are typically culture-specific but you can control profanity translation by either marking the translated text as profane or by omitting it in the results.
+2. **Selective translation**. You can tag content so that it isn't translated. For example, you may want to tag code, a brand name, or a word/phrase that doesn't make sense when localized.
 
 # **Document intelligence in Microsoft Azure**
+
+https://documentintelligence.ai.azure.com/studio
+
+Azure AI Document Intelligence is the new name for **Azure Form Recognizer**. You may still see Azure Form Recognizer in the Azure portal or Document Intelligence Studio.
+
 You can use Microsoft's **Azure AI Document Intelligence** to build solutions that manage and accelerate data collection from scanned documents. Features of Azure AI Document Intelligence help automate document processing in applications and workflows, enhance data-driven strategies, and enrich document search capabilities. The service features are available for use and testing in the **Document Intelligence Studio and other programming languages**.
 **Knowledge mining** is the term used to describe solutions that involve extracting information from large volumes of often unstructured data to create a searchable knowledge store. One Microsoft knowledge mining solution is **Azure AI Search**, a private, enterprise, search solution that has tools for building indexes.
+
+Document intelligence describes AI capabilities that support processing text and making sense of information in text. As an extension of optical character recognition (OCR), **document intelligence takes the next step** a person might after reading a form or document. It automates the process of extracting, understanding, and saving the data in text. The ability to extract text, layout, and key-value pairs is known as document analysis. Document analysis provides locations of text on a page identified by **bounding box coordinates**. 
+
+Azure AI Document Intelligence consists of features grouped by model type:
+1. **Document analysis** - general document analysis that returns structured data representations, including regions of interest and their inter-relationships.
+2. **Prebuilt models** - process common document types such as invoices, business cards, ID documents, and more. financial services and legal, US tax, US mortgage, and personal identification documents.
+3. **Custom models** - can be trained to identify specific fields that are not included in the existing pretrained models. **Includes custom classification models and document field extraction models** such as the custom generative AI model and custom neural model.
+
+To use Azure AI Document Intelligence, create either a Document Intelligence or Azure AI services resource in your Azure subscription.
 
 # **Generative AI in Microsoft Azure**
 **Azure OpenAI Service** is Microsoft's cloud solution for deploying, customizing, and hosting generative AI models. The service features are available for use and testing with Azure AI Foundry, Microsoft's platform for designing enterprise-grade AI solutions. You can use the **Azure AI Foundry** portal to manage, develop, and customize generative AI models.
