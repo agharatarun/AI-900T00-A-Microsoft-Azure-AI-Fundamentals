@@ -202,7 +202,25 @@ An **Azure AI services resource** - Use Azure AI Speech in combination with othe
 -----
 
 **Language translation concepts**
+
 One of the many challenges of translation between languages is that words don't have a one to one replacement between languages. Machine translation advancements are needed to improve the communication of meaning and tone between languages.
+
+**Literal and semantic translation**: A literal translation is where each word is translated to the corresponding word in the target language. Artificial intelligence systems must be able to understand, not only the words, but also the semantic context in which they're used.
+
+**Text and speech translation**: Text translation can be used to translate documents from one language to another. Speech translation is used to translate between spoken languages, sometimes directly (speech-to-speech translation) and sometimes by translating to an intermediary text format (speech-to-text translation).
+
+Azure AI services:
+**The Azure AI Translator service**, which supports text-to-text translation. The service uses a Neural Machine Translation (NMT) model for translation
+**The Azure AI Speech service**, which enables speech to text and speech-to-speech translation. return the translation as text or an audio stream.
+
+There are dedicated Translator and Speech resource types for these services, which you can use if you want to manage access and billing for each service individually.
+
+Text translation, Document translation & Custom translation (used to enable enterprises, app developers, and language service providers to build customized neural machine translation (NMT) systems)
+
+Azure AI Translator's application programming interface (API) offers some optional configuration to help you fine-tune the results that are returned, including:
+
+**Profanity filtering**. Without any configuration, the service will translate the input text, without filtering out profanity. Profanity levels are typically culture-specific but you can control profanity translation by either marking the translated text as profane or by omitting it in the results.
+**Selective translation**. You can tag content so that it isn't translated. For example, you may want to tag code, a brand name, or a word/phrase that doesn't make sense when localized.
 
 # **Document intelligence in Microsoft Azure**
 You can use Microsoft's **Azure AI Document Intelligence** to build solutions that manage and accelerate data collection from scanned documents. Features of Azure AI Document Intelligence help automate document processing in applications and workflows, enhance data-driven strategies, and enrich document search capabilities. The service features are available for use and testing in the **Document Intelligence Studio and other programming languages**.
