@@ -166,6 +166,8 @@ Resources for conversational language understanding
 When you are satisfied with the results from the training and testing, you can publish your Conversational Language Understanding application to a prediction resource for consumption.
 
 -----
+https://speech.microsoft.com/
+
 AI speech capabilities enable us to manage home and auto systems with voice instructions, get answers from computers for spoken questions, generate captions from audio, and much more.
 To enable this kind of interaction, the AI system must support at least two capabilities:
 1. Speech recognition - the ability to detect and interpret spoken input
@@ -195,7 +197,12 @@ You can create Azure AI Speech projects using user interfaces with Speech Studio
 
 **Resources for Azure AI Speech**
 A **Speech resource** - manage access and billing for the resource separately from other services.
-An Azure AI services resource - Use Azure AI Speech in combination with other Azure AI services, and you want to manage access and billing for these services together.
+An **Azure AI services resource** - Use Azure AI Speech in combination with other Azure AI services, and you want to manage access and billing for these services together.
+
+-----
+
+**Language translation concepts**
+One of the many challenges of translation between languages is that words don't have a one to one replacement between languages. Machine translation advancements are needed to improve the communication of meaning and tone between languages.
 
 # **Document intelligence in Microsoft Azure**
 You can use Microsoft's **Azure AI Document Intelligence** to build solutions that manage and accelerate data collection from scanned documents. Features of Azure AI Document Intelligence help automate document processing in applications and workflows, enhance data-driven strategies, and enrich document search capabilities. The service features are available for use and testing in the **Document Intelligence Studio and other programming languages**.
