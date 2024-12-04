@@ -24,6 +24,8 @@ https://portal.vision.cognitive.azure.com/gallery/featured
 5. Face detection, analysis, and recognition - Face detection is a specialized form of object detection that locates human faces in an image. This can be combined with classification and facial geometry analysis techniques to recognize individuals based on their **facial features**.
 6. Optical character recognition (OCR) - Optical character recognition is a technique used to **detect and read text in image**
 
+Classification is used to predict categories of data. It can predict which category or class an item of data belongs to. In this example, a machine learning model trained by using classification with labeled data can be used to determine the type of bone fracture in a new scan that is not labeled already. Featurization is not a machine learning type. Regression is used to predict numeric values. Clustering analyzes unlabeled data to find similarities in the data.
+
 You can use Microsoft's Azure AI Vision to develop computer vision solutions.
 Some features of Azure AI Vision include:
 1. Image Analysis: capabilities for analyzing images and video, and extracting descriptions, tags, objects, and text.
