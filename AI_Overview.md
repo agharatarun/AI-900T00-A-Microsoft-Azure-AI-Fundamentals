@@ -326,3 +326,8 @@ R2 values are widely accepted, but aren't a perfect measure we can use in isolat
 3. R2 values don't tell us the direction of the relationship. For example, an R2 value of 0.8 doesn't tell us whether the line is sloped upwards or downwards. It also doesn’t tell us how sloped the line is.
 
 **Polynomial regression models** relationships as a particular type of curve. Polynomials are a family of curves, ranging from simple to complex shapes. The more parameters in the equation (model), the more complex the curve can be.
+
+A major advantage of polynomial regression is that you can use it to look at all sorts of relationships. 
+The major disadvantage to polynomial curves is that they often extrapolate poorly. In other words, if we try to predict values that are larger or smaller than our training data, polynomials can predict unrealistically extreme values. Another disadvantage is that polynomial curves are easy to overfit. This means that noise in the data can change the shape of the curve much more than simpler models, such as simple linear regression.
+
+We've seen how multiple regression can fit several linear relationships at the same time. There's no need for these to be limited to linear relationships, though. Curves of all kinds can be used for these relationships where appropriate. Although you should take care not to use curves such as polynomials with multiple features where they're not necessary. This is because the relationships can end up very complex, which makes it harder to understand the models and assess whether they'll make predictions that don't make sense from a real-world standpoint.
