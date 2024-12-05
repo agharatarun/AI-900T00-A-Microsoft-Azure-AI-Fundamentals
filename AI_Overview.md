@@ -305,7 +305,7 @@ four stage process to develop and implement a plan for responsible AI when using
    * Protected material detection: Scans for known copyrighted content
    * Custom categories: Define custom categories for any new or emerging patterns
 
-**Understand Responsible AI**
+# **Understand Responsible AI**
 1. Fairness
 2. Reliability and safety
 3. Privacy and security
@@ -313,3 +313,16 @@ four stage process to develop and implement a plan for responsible AI when using
 5. Transparency
 6. Accountability
 
+# **Train and understand regression models in machine learning**
+Regression is a simple, common, and highly useful data analysis technique, colloquially referred to as "fitting a trend line." **Regression identifies the strength of relationship between one or more features and a single label**. In its simplest form, regression fits a straight line between a one variable (feature) and another (label). In more complicated forms, regression can find non-linear relationships between a single label and multiple features.
+
+**Multiple linear regression** models the relationship between several features and a single variable. Mathematically, it's the same as simple linear regression, and is usually fit using the same cost function, but with more features. Rather than modeling a single relationship, this technique simultaneously models multiple relationships, **which it treats as independent of one another**. For example, if we're predicting how ill a dog becomes based on their age and body_fat_percentage, two relationships are found. The fact that the model expects features to be independent is called a **model assumption**. When model assumptions aren't true, the model can make misleading predictions.
+
+We know that cost functions can be used to assess how well a model fits the data on which it's trained. Linear regression models have a special related measure called **R2 (R-squared)**. R2 is a value between 0 and 1 that tells us how well a linear regression model fits the data. When people talk about correlations being strong, they often mean that the R2 value was large.
+
+R2 values are widely accepted, but aren't a perfect measure we can use in isolation. They suffer four limitations:
+1. Because of how R2 is calculated, the more samples we have, the higher the R2.
+2. R2 values don't tell us how well a model will work with new, previously unseen data. Statisticians overcome this by calculating a supplementary measure, called a p-value.
+3. R2 values don't tell us the direction of the relationship. For example, an R2 value of 0.8 doesn't tell us whether the line is sloped upwards or downwards. It also doesn’t tell us how sloped the line is.
+
+**Polynomial regression models** relationships as a particular type of curve. Polynomials are a family of curves, ranging from simple to complex shapes. The more parameters in the equation (model), the more complex the curve can be.
