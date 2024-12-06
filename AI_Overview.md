@@ -137,7 +137,7 @@ text classification: Another useful text analysis technique is to use a classifi
 
 ![image](https://github.com/user-attachments/assets/20e66364-c096-4219-942b-afc6d7cdb3b9)
 
-Azure AI Language is a part of the Azure AI services offerings that can perform advanced natural language processing over unstructured text. Azure AI Language's text analysis features include:
+Azure AI Language is a part of the Azure AI services offerings that can perform advanced natural language processing over unstructured text. Azure AI Language's **text analysis** features include:
 
 1. Named entity recognition identifies people, places, events, and more. This feature can also be customized to extract custom categories.
 2. Entity linking identifies known entities together with a link to Wikipedia.
@@ -170,6 +170,11 @@ When you are satisfied with the results from the training and testing, you can p
 -----
 https://speech.microsoft.com/
 
+Build voice-enabled, multilingual generative AI apps with fast transcriptions and natural-sounding voices.
+Customize speech in your app for your domain—including OpenAI Whisper model—or give your copilot a branded voice.
+Enable real-time, multi-language speech to speech translation and speech to text transcription of audio streams.
+Run AI models wherever your data resides. Deploy your apps in the cloud or at the edge with containers.
+
 AI speech capabilities enable us to manage home and auto systems with voice instructions, get answers from computers for spoken questions, generate captions from audio, and much more.
 To enable this kind of interaction, the AI system must support at least two capabilities:
 1. Speech recognition - the ability to detect and interpret spoken input
@@ -186,9 +191,10 @@ A **language model** that maps phonemes to words, usually using a statistical al
 To synthesize speech, the system typically tokenizes the text to break it down into individual words, and assigns phonetic sounds to each word. It then breaks the phonetic transcription into prosodic units (such as phrases, clauses, or sentences) to create phonemes that will be converted to audio format. These phonemes are then synthesized as audio and can be assigned a particular voice, speaking rate, pitch, and volume.
 
 Azure AI Speech service, which supports many capabilities, including:
-1. **Speech to text**: Real-time transcription & Batch transcription
+1. **Speech to text**: Real-time transcription & Batch transcription. Speech-to-Text, also known as automatic speech recognition (ASR), is a feature of Speech Services that provides transcription.
 2. **Text to speech**: The service includes multiple pre-defined voices with support for multiple languages and regional pronunciation, including neural voices that leverage neural networks to overcome common limitations in speech synthesis with regard to intonation, resulting in a more natural sounding voice.
    
+While both technologies serve to bridge the gap between humans and machines, they operate in opposite directions. **Speech synthesis takes written text and converts it into spoken language, while speech recognition interprets spoken language and converts it into text**.
 A separate module covers speech translation in Azure AI services.
 
 Azure AI Speech is available for use through several tools and programming languages including:
@@ -217,7 +223,8 @@ Azure AI services:
 
 There are dedicated Translator and Speech resource types for these services, which you can use if you want to manage access and billing for each service individually.
 
-Text translation, Document translation & Custom translation (used to enable enterprises, app developers, and language service providers to build customized neural machine translation (NMT) systems)
+Text translation, Document translation & Custom translation (used to enable enterprises, app developers, and language service providers to build customized neural machine translation (NMT) systems).
+The translator service provides multi-language support for text translation, transliteration, language detection, and dictionaries.
 
 Azure AI Translator's application programming interface (API) offers some optional configuration to help you fine-tune the results that are returned, including:
 
