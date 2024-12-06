@@ -139,7 +139,8 @@ text classification: Another useful text analysis technique is to use a classifi
 
 Azure AI Language is a part of the Azure AI services offerings that can perform advanced natural language processing over unstructured text. Azure AI Language's **text analysis** features include:
 
-1. Named entity recognition identifies people, places, events, and more. This feature can also be customized to extract custom categories.
+1. Named entity recognition identifies people, places, events, and more. This feature can also be customized to extract custom categories. Named Entity Recognition (NER) is the ability to identify different entities in text and categorize them into pre-defined classes or types such as: person, location, event, product, and organization.
+In this question, the square brackets indicate the entities such as DateTime, PersonType, Skill.
 2. Entity linking identifies known entities together with a link to Wikipedia.
 3. Personal identifying information (PII) detection identifies personally sensitive information, including personal health information (PHI).
 4. Language detection identifies the language of the text and returns a language code such as "en" for English.
@@ -154,11 +155,14 @@ Resource for Azure AI Language
 -----
 **Question answering with the Language Service**
 You can easily create a question answering solution on Microsoft Azure using Azure AI Language service. Azure AI Language includes a custom question answering feature that enables you to create a knowledge base of question and answer pairs that can be queried using natural language input.
+**Adding chit-chat to your bot makes it more conversational and engaging**. The chit-chat feature in QnA maker allows you to easily add a pre-populated set of the top chit-chat, into your knowledge base (KB). This can be a starting point for your bot's personality, and it will save you the time and cost of writing them from scratch.
 You can use **Azure AI Language Studio** to create, train, publish, and manage question answering projects. You can write code to create and manage projects using the Azure AI Language REST API or SDK. However, in most scenarios it is easier to use the Language Studio.
 
 -----
 **conversational language understanding**
 Azure AI Language service supports **conversational language understanding (CLU)**. You can use CLU to build language models that interpret the meaning of phrases in a conversational setting. One example of a CLU application is one that's able to turn devices on and off based on speech.
+**Language Understanding (LUIS)** is a cloud-based API service that applies custom machine-learning intelligence to a user's conversational, natural language text to predict overall meaning, and pull out relevant, detailed information.
+Design your LUIS model with categories of user intentions called intents. Each intent needs examples of user utterances. Each utterance can provide data that needs to be extracted with machine-learning entities.
 To work with conversational language understanding (CLU), you need to take into account three core concepts: **utterances, entities, and intents**.
 
 Resources for conversational language understanding
@@ -338,3 +342,9 @@ A major advantage of polynomial regression is that you can use it to look at all
 The major disadvantage to polynomial curves is that they often extrapolate poorly. In other words, if we try to predict values that are larger or smaller than our training data, polynomials can predict unrealistically extreme values. Another disadvantage is that polynomial curves are easy to overfit. This means that noise in the data can change the shape of the curve much more than simpler models, such as simple linear regression.
 
 We've seen how multiple regression can fit several linear relationships at the same time. There's no need for these to be limited to linear relationships, though. Curves of all kinds can be used for these relationships where appropriate. Although you should take care not to use curves such as polynomials with multiple features where they're not necessary. This is because the relationships can end up very complex, which makes it harder to understand the models and assess whether they'll make predictions that don't make sense from a real-world standpoint.
+
+# **Q&A**
+You have an AI solution that provides users with the ability to control smart devices by using verbal commands. Which two types of natural language processing (NLP) workloads does the solution use? Each correct answer presents part of the solution.
+
+Considering the scenario described where the goal is to control smart devices using voice commands, the most appropriate choice would be to use **speech-to-text conversion as the first step** in the process and **then apply language modeling to** generate consistent and meaningful responses or actions based on the commands recognized in the produced text. This could allow the AI to understand the users' intent and respond appropriately.
+Key phrase extraction could also work but is more complex because an additional layer would have to be added that understands user intent based on the combination of keywords extracted. But it would become complex and probably less efficient as well. Language modeling solves this problem natively.
