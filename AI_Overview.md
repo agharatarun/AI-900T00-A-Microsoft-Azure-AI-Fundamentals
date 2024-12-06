@@ -348,3 +348,32 @@ You have an AI solution that provides users with the ability to control smart de
 
 Considering the scenario described where the goal is to control smart devices using voice commands, the most appropriate choice would be to use **speech-to-text conversion as the first step** in the process and **then apply language modeling to** generate consistent and meaningful responses or actions based on the commands recognized in the produced text. This could allow the AI to understand the users' intent and respond appropriately.
 Key phrase extraction could also work but is more complex because an additional layer would have to be added that understands user intent based on the combination of keywords extracted. But it would become complex and probably less efficient as well. Language modeling solves this problem natively.
+
+The metric that is not used when training models in Custom Vision is d. F1 Score. Custom Vision primarily uses **Precision, Recall, and Mean Average Precision (mAP)** to evaluate model performance
+
+The fraction of time when the model is correct is known as: Accuracy. Accuracy is useful when the classes are balanced.
+Which of these confirms how often the model is correct: Precision. Precision is useful when the cost of false positives is high.
+Which value identifies how much the model finds all there is to find?: Recall. Recall is useful when the cost of false negatives is high.
+F1 Score: This is the weighted average of Precision and Recall. It is useful when you need a balance between Precision and Recall, especially when the class distribution is imbalanced.
+
+**Ordinal Regression:** This type of regression is used when the dependent variable is ordinal, meaning it has a natural order but the intervals between the values are not necessarily equal. For example, **predicting the rank of a student in a class**.
+This regression type is used to predict a variable that can be considered as a label: Ordinal
+
+**Linear Regression**: This is used to predict a continuous dependent variable based on one or more independent variables. It assumes a linear relationship between the dependent and independent variables. **For example, predicting house prices based on features like size and location**.
+
+**Poisson Regression**: This is used for modeling count data and is appropriate when the dependent variable represents counts or the number of times an event occurs. For example, **predicting the number of customer complaints received in a day**.
+This regression type uses counts instead of data values: Poisson
+
+Support Vector Machine (SVM): While SVM is primarily used for classification tasks, it can also be adapted for regression (SVR - Support Vector Regression). It tries to find the best fit line within a certain margin of tolerance. However, it is not typically used to predict a variable that can be considered as a label.
+
+**Statistical analysis cab be broken down into these three processes: Transformation, Visualisation, Modeling**
+
+**Mean Absolute Error (MAE):** This is typically used in regression models to measure the average magnitude of errors between predicted and actual values. It is **not** commonly used in clustering models.
+
+**Average Distance to Cluster Center:** This measures the average distance of all points in a cluster to the cluster center (centroid). It helps in evaluating the compactness of clusters.
+
+**Average Distance to Other Center:** This measures the average distance of points in one cluster to the centers of other clusters. It helps in evaluating the separation between clusters.
+
+**Number of Points:** This simply counts the number of data points in each cluster. While it can provide some information about the distribution of data points across clusters, it is not a standard metric for evaluating clustering performance.
+
+**Tagging Images:** This involves identifying and labeling objects, scenes, and activities within an image. **Azure AI Vision**, for example, can automatically generate tags for images based on their content, making it easier to organize and search through large collections of images
