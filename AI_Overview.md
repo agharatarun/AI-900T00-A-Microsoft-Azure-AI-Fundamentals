@@ -353,14 +353,10 @@ Key phrase extraction could also work but is more complex because an additional 
 5. **Coefficient of determination (R2):** This metric is used in **regression models** to measure the proportion of the variance in the dependent variable that is predictable from the independent variables. It is not used for classification models.
 6. **Precision: This is a metric used in classification models.** It measures the accuracy of the positive predictions. Precision is the ratio of correctly predicted positive observations to the total predicted positives. It is particularly useful when the cost of false positives is high.
 
-7. **Silhouette: This metric is used to evaluate clustering models**, not classification models. The silhouette score measures how similar an object is to its own cluster compared to other clusters. It ranges from -1 to 1, where a high value indicates that the object is well matched to its own cluster and poorly matched to neighboring clusters.
-
+7. **Silhouette: This metric is used to evaluate clustering models**, not classification models. The silhouette score measures how similar an object is to its own cluster compared to other clusters. It ranges from -1 to 1, where a high value indicates that the object is well matched to its own cluster and poorly matched to neighboring clusters. Which metric can be used to evaluate the quality of clusters?: **Silhouette**
 8. The fraction of time when the model is correct is known as: Accuracy. Accuracy is useful when the classes are balanced.
-
 9. Which of these confirms how often the model is correct: Precision. Precision is useful when the cost of false positives is high.
-
 10. Which value identifies how much the model finds all there is to find?: Recall. Recall is useful when the cost of false negatives is high.
-
 11. F1 Score: **This metric is used in classification models, especially when dealing with imbalanced datasets**. The F1-score is the harmonic mean of Precision and Recall, providing a balance between the two. It is particularly useful when you need to consider both false positives and false negatives. This is the weighted average of Precision and Recall. It is useful when you need a balance between Precision and Recall, especially when the class distribution is imbalanced.
 
 12. **Ordinal Regression:** This type of regression is used when the dependent variable is ordinal, meaning it has a natural order but the intervals between the values are not necessarily equal. For example, **predicting the rank of a student in a class**.
@@ -394,4 +390,4 @@ This regression type uses counts instead of data values: Poisson
 27. **Training**: This is the process of teaching a machine learning model to recognize patterns in data. During training, the model learns from a labeled dataset by adjusting its parameters to minimize the error between its predictions and the actual values.
 28. **Modeling**: This refers to the process of creating a machine learning model, which includes selecting the appropriate algorithm, defining the model architecture, and training the model on data. Modeling encompasses both the training and inference phases.
 29. What is the process called when a machine learning model calculates an output value based on one or more input values?: **Inference**
-30. 
+30. What is a **neural network**?: A function that maps inputs to outputs based on learned weights
