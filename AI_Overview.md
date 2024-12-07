@@ -349,49 +349,49 @@ Key phrase extraction could also work but is more complex because an additional 
 
 3. The metric that is not used when training models in Custom Vision is d. F1 Score. Custom Vision primarily uses **Precision, Recall, and Mean Average Precision (mAP)** to evaluate model performance
 
-4. **Mean Squared Error (MSE):** This is typically used in **regression models**, not classification models. It measures the average of the squares of the errors—that is, the average squared difference between the estimated values and the actual value. MSE is useful for evaluating how well a regression model fits the data.
+4. **Mean Squared Error (MSE):** This is typically used in **regression models**, not classification models. It measures the average of the squares of the errors—that is, the average squared difference between the estimated values and the actual value. MSE is useful for evaluating how well a regression model fits the data. **Root Mean Squared Error (RMSE):** Similar to MSE, RMSE is used in regression models to measure the square root of the average squared differences between predicted and actual values. It is not used for classification models.
+5. **Coefficient of determination (R2):** This metric is used in **regression models** to measure the proportion of the variance in the dependent variable that is predictable from the independent variables. It is not used for classification models.
+6. **Precision: This is a metric used in classification models.** It measures the accuracy of the positive predictions. Precision is the ratio of correctly predicted positive observations to the total predicted positives. It is particularly useful when the cost of false positives is high.
 
-5. **Precision: This is a metric used in classification models.** It measures the accuracy of the positive predictions. Precision is the ratio of correctly predicted positive observations to the total predicted positives. It is particularly useful when the cost of false positives is high.
+7. **Silhouette: This metric is used to evaluate clustering models**, not classification models. The silhouette score measures how similar an object is to its own cluster compared to other clusters. It ranges from -1 to 1, where a high value indicates that the object is well matched to its own cluster and poorly matched to neighboring clusters.
 
-6. **Silhouette: This metric is used to evaluate clustering models**, not classification models. The silhouette score measures how similar an object is to its own cluster compared to other clusters. It ranges from -1 to 1, where a high value indicates that the object is well matched to its own cluster and poorly matched to neighboring clusters.
+8. The fraction of time when the model is correct is known as: Accuracy. Accuracy is useful when the classes are balanced.
 
-7. The fraction of time when the model is correct is known as: Accuracy. Accuracy is useful when the classes are balanced.
+9. Which of these confirms how often the model is correct: Precision. Precision is useful when the cost of false positives is high.
 
-8. Which of these confirms how often the model is correct: Precision. Precision is useful when the cost of false positives is high.
+10. Which value identifies how much the model finds all there is to find?: Recall. Recall is useful when the cost of false negatives is high.
 
-9. Which value identifies how much the model finds all there is to find?: Recall. Recall is useful when the cost of false negatives is high.
+11. F1 Score: **This metric is used in classification models, especially when dealing with imbalanced datasets**. The F1-score is the harmonic mean of Precision and Recall, providing a balance between the two. It is particularly useful when you need to consider both false positives and false negatives. This is the weighted average of Precision and Recall. It is useful when you need a balance between Precision and Recall, especially when the class distribution is imbalanced.
 
-10. F1 Score: This is the weighted average of Precision and Recall. It is useful when you need a balance between Precision and Recall, especially when the class distribution is imbalanced.
-
-11. **Ordinal Regression:** This type of regression is used when the dependent variable is ordinal, meaning it has a natural order but the intervals between the values are not necessarily equal. For example, **predicting the rank of a student in a class**.
+12. **Ordinal Regression:** This type of regression is used when the dependent variable is ordinal, meaning it has a natural order but the intervals between the values are not necessarily equal. For example, **predicting the rank of a student in a class**.
 This regression type is used to predict a variable that can be considered as a label: Ordinal
 
-12. **Linear Regression**: This is used to predict a continuous dependent variable based on one or more independent variables. It assumes a linear relationship between the dependent and independent variables. **For example, predicting house prices based on features like size and location**.
+13. **Linear Regression**: This is used to predict a continuous dependent variable based on one or more independent variables. It assumes a linear relationship between the dependent and independent variables. **For example, predicting house prices based on features like size and location**.
 
-13. **Poisson Regression**: This is used for modeling count data and is appropriate when the dependent variable represents counts or the number of times an event occurs. For example, **predicting the number of customer complaints received in a day**.
+14. **Poisson Regression**: This is used for modeling count data and is appropriate when the dependent variable represents counts or the number of times an event occurs. For example, **predicting the number of customer complaints received in a day**.
 This regression type uses counts instead of data values: Poisson
 
-14. **Support Vector Machine (SVM): While SVM is primarily used for classification tasks**, it can also be adapted for regression (SVR - Support Vector Regression). It tries to find the best fit line within a certain margin of tolerance. However, it is not typically used to predict a variable that can be considered as a label.
+15. **Support Vector Machine (SVM): While SVM is primarily used for classification tasks**, it can also be adapted for regression (SVR - Support Vector Regression). It tries to find the best fit line within a certain margin of tolerance. However, it is not typically used to predict a variable that can be considered as a label.
 
-15. **Statistical analysis cab be broken down into these three processes: Transformation, Visualisation, Modeling**
+16. **Statistical analysis cab be broken down into these three processes: Transformation, Visualisation, Modeling**
 
-16. **Mean Absolute Error (MAE):** This is typically used in **regression models** to measure the average magnitude of errors between predicted and actual values. It is **not** commonly used in clustering models.
+17. IMP: **Mean Absolute Error (MAE):** This is typically used in **regression models** to measure the average magnitude of errors between predicted and actual values. It is **not** commonly used in clustering models.
 
-17. **Average Distance to Cluster Center:** This measures the average distance of all points in a cluster to the cluster center (centroid). It helps in evaluating the compactness of clusters.
+18. **Average Distance to Cluster Center:** This measures the average distance of all points in a cluster to the cluster center (centroid). It helps in evaluating the compactness of clusters.
 
-18. **Average Distance to Other Center:** This measures the average distance of points in one cluster to the centers of other clusters. It helps in evaluating the separation between clusters.
+19. **Average Distance to Other Center:** This measures the average distance of points in one cluster to the centers of other clusters. It helps in evaluating the separation between clusters.
 
-19. **Number of Points:** This simply counts the number of data points in each cluster. While it can provide some information about the distribution of data points across clusters, it is not a standard metric for evaluating clustering performance.
+20. **Number of Points:** This simply counts the number of data points in each cluster. While it can provide some information about the distribution of data points across clusters, it is not a standard metric for evaluating clustering performance.
 
-20. **Tagging Images:** This involves identifying and labeling objects, scenes, and activities within an image. **Azure AI Vision**, for example, can automatically generate tags for images based on their content, making it easier to organize and search through large collections of images
+21. **Tagging Images:** This involves identifying and labeling objects, scenes, and activities within an image. **Azure AI Vision**, for example, can automatically generate tags for images based on their content, making it easier to organize and search through large collections of images
 
-21. The Azure AI Vision's Read API provides results arranged in pages, lines, and words. This API is designed to extract text from images and documents, and it organizes the extracted text in a structured manner.
+22. The Azure AI Vision's Read API provides results arranged in pages, lines, and words. This API is designed to extract text from images and documents, and it organizes the extracted text in a structured manner.
 
-22. To use **Azure AI Document Intelligence's prebuilt receipt model**, you should create an **Azure AI Document Intelligence or Azure AI services resource**. This resource is specifically designed for document processing tasks, including extracting key information from receipts using Optical Character Recognition (OCR) and deep learning models.
-23. Which data format is accepted by Azure AI Search when you're pushing data to the index? **JSON**
-24. An **indexer converts documents into JSON** and forwards them to a search engine for indexing.
-25. **Inference**: This is the process of using a trained machine learning model to make predictions or decisions based on new input data. During inference, the model applies the learned patterns from the training phase to generate output values.
-26. **Training**: This is the process of teaching a machine learning model to recognize patterns in data. During training, the model learns from a labeled dataset by adjusting its parameters to minimize the error between its predictions and the actual values.
-27. **Modeling**: This refers to the process of creating a machine learning model, which includes selecting the appropriate algorithm, defining the model architecture, and training the model on data. Modeling encompasses both the training and inference phases.
-28. What is the process called when a machine learning model calculates an output value based on one or more input values?: **Inference**
-29. 
+23. To use **Azure AI Document Intelligence's prebuilt receipt model**, you should create an **Azure AI Document Intelligence or Azure AI services resource**. This resource is specifically designed for document processing tasks, including extracting key information from receipts using Optical Character Recognition (OCR) and deep learning models.
+24. Which data format is accepted by Azure AI Search when you're pushing data to the index? **JSON**
+25. An **indexer converts documents into JSON** and forwards them to a search engine for indexing.
+26. **Inference**: This is the process of using a trained machine learning model to make predictions or decisions based on new input data. During inference, the model applies the learned patterns from the training phase to generate output values.
+27. **Training**: This is the process of teaching a machine learning model to recognize patterns in data. During training, the model learns from a labeled dataset by adjusting its parameters to minimize the error between its predictions and the actual values.
+28. **Modeling**: This refers to the process of creating a machine learning model, which includes selecting the appropriate algorithm, defining the model architecture, and training the model on data. Modeling encompasses both the training and inference phases.
+29. What is the process called when a machine learning model calculates an output value based on one or more input values?: **Inference**
+30. 
