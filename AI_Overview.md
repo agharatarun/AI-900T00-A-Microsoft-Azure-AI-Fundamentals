@@ -344,36 +344,49 @@ The major disadvantage to polynomial curves is that they often extrapolate poorl
 We've seen how multiple regression can fit several linear relationships at the same time. There's no need for these to be limited to linear relationships, though. Curves of all kinds can be used for these relationships where appropriate. Although you should take care not to use curves such as polynomials with multiple features where they're not necessary. This is because the relationships can end up very complex, which makes it harder to understand the models and assess whether they'll make predictions that don't make sense from a real-world standpoint.
 
 # **Q&A**
-You have an AI solution that provides users with the ability to control smart devices by using verbal commands. Which two types of natural language processing (NLP) workloads does the solution use? Each correct answer presents part of the solution.
-
-Considering the scenario described where the goal is to control smart devices using voice commands, the most appropriate choice would be to use **speech-to-text conversion as the first step** in the process and **then apply language modeling to** generate consistent and meaningful responses or actions based on the commands recognized in the produced text. This could allow the AI to understand the users' intent and respond appropriately.
+1. You have an AI solution that provides users with the ability to control smart devices by using verbal commands. Which two types of natural language processing (NLP) workloads does the solution use? Each correct answer presents part of the solution. Considering the scenario described where the goal is to control smart devices using voice commands, the most appropriate choice would be to use **speech-to-text conversion as the first step** in the process and **then apply language modeling to** generate consistent and meaningful responses or actions based on the commands recognized in the produced text. This could allow the AI to understand the users' intent and respond appropriately.
 Key phrase extraction could also work but is more complex because an additional layer would have to be added that understands user intent based on the combination of keywords extracted. But it would become complex and probably less efficient as well. Language modeling solves this problem natively.
 
-The metric that is not used when training models in Custom Vision is d. F1 Score. Custom Vision primarily uses **Precision, Recall, and Mean Average Precision (mAP)** to evaluate model performance
+3. The metric that is not used when training models in Custom Vision is d. F1 Score. Custom Vision primarily uses **Precision, Recall, and Mean Average Precision (mAP)** to evaluate model performance
 
-The fraction of time when the model is correct is known as: Accuracy. Accuracy is useful when the classes are balanced.
-Which of these confirms how often the model is correct: Precision. Precision is useful when the cost of false positives is high.
-Which value identifies how much the model finds all there is to find?: Recall. Recall is useful when the cost of false negatives is high.
-F1 Score: This is the weighted average of Precision and Recall. It is useful when you need a balance between Precision and Recall, especially when the class distribution is imbalanced.
+4. **Mean Squared Error (MSE):** This is typically used in **regression models**, not classification models. It measures the average of the squares of the errors—that is, the average squared difference between the estimated values and the actual value. MSE is useful for evaluating how well a regression model fits the data.
 
-**Ordinal Regression:** This type of regression is used when the dependent variable is ordinal, meaning it has a natural order but the intervals between the values are not necessarily equal. For example, **predicting the rank of a student in a class**.
+5. **Precision: This is a metric used in classification models.** It measures the accuracy of the positive predictions. Precision is the ratio of correctly predicted positive observations to the total predicted positives. It is particularly useful when the cost of false positives is high.
+
+6. **Silhouette: This metric is used to evaluate clustering models**, not classification models. The silhouette score measures how similar an object is to its own cluster compared to other clusters. It ranges from -1 to 1, where a high value indicates that the object is well matched to its own cluster and poorly matched to neighboring clusters.
+
+7. The fraction of time when the model is correct is known as: Accuracy. Accuracy is useful when the classes are balanced.
+
+8. Which of these confirms how often the model is correct: Precision. Precision is useful when the cost of false positives is high.
+
+9. Which value identifies how much the model finds all there is to find?: Recall. Recall is useful when the cost of false negatives is high.
+
+10. F1 Score: This is the weighted average of Precision and Recall. It is useful when you need a balance between Precision and Recall, especially when the class distribution is imbalanced.
+
+11. **Ordinal Regression:** This type of regression is used when the dependent variable is ordinal, meaning it has a natural order but the intervals between the values are not necessarily equal. For example, **predicting the rank of a student in a class**.
 This regression type is used to predict a variable that can be considered as a label: Ordinal
 
-**Linear Regression**: This is used to predict a continuous dependent variable based on one or more independent variables. It assumes a linear relationship between the dependent and independent variables. **For example, predicting house prices based on features like size and location**.
+12. **Linear Regression**: This is used to predict a continuous dependent variable based on one or more independent variables. It assumes a linear relationship between the dependent and independent variables. **For example, predicting house prices based on features like size and location**.
 
-**Poisson Regression**: This is used for modeling count data and is appropriate when the dependent variable represents counts or the number of times an event occurs. For example, **predicting the number of customer complaints received in a day**.
+13. **Poisson Regression**: This is used for modeling count data and is appropriate when the dependent variable represents counts or the number of times an event occurs. For example, **predicting the number of customer complaints received in a day**.
 This regression type uses counts instead of data values: Poisson
 
-Support Vector Machine (SVM): While SVM is primarily used for classification tasks, it can also be adapted for regression (SVR - Support Vector Regression). It tries to find the best fit line within a certain margin of tolerance. However, it is not typically used to predict a variable that can be considered as a label.
+14. **Support Vector Machine (SVM): While SVM is primarily used for classification tasks**, it can also be adapted for regression (SVR - Support Vector Regression). It tries to find the best fit line within a certain margin of tolerance. However, it is not typically used to predict a variable that can be considered as a label.
 
-**Statistical analysis cab be broken down into these three processes: Transformation, Visualisation, Modeling**
+15. **Statistical analysis cab be broken down into these three processes: Transformation, Visualisation, Modeling**
 
-**Mean Absolute Error (MAE):** This is typically used in regression models to measure the average magnitude of errors between predicted and actual values. It is **not** commonly used in clustering models.
+16. **Mean Absolute Error (MAE):** This is typically used in regression models to measure the average magnitude of errors between predicted and actual values. It is **not** commonly used in clustering models.
 
-**Average Distance to Cluster Center:** This measures the average distance of all points in a cluster to the cluster center (centroid). It helps in evaluating the compactness of clusters.
+17. **Average Distance to Cluster Center:** This measures the average distance of all points in a cluster to the cluster center (centroid). It helps in evaluating the compactness of clusters.
 
-**Average Distance to Other Center:** This measures the average distance of points in one cluster to the centers of other clusters. It helps in evaluating the separation between clusters.
+18. **Average Distance to Other Center:** This measures the average distance of points in one cluster to the centers of other clusters. It helps in evaluating the separation between clusters.
 
-**Number of Points:** This simply counts the number of data points in each cluster. While it can provide some information about the distribution of data points across clusters, it is not a standard metric for evaluating clustering performance.
+19. **Number of Points:** This simply counts the number of data points in each cluster. While it can provide some information about the distribution of data points across clusters, it is not a standard metric for evaluating clustering performance.
 
-**Tagging Images:** This involves identifying and labeling objects, scenes, and activities within an image. **Azure AI Vision**, for example, can automatically generate tags for images based on their content, making it easier to organize and search through large collections of images
+20. **Tagging Images:** This involves identifying and labeling objects, scenes, and activities within an image. **Azure AI Vision**, for example, can automatically generate tags for images based on their content, making it easier to organize and search through large collections of images
+
+21. The Azure AI Vision's Read API provides results arranged in pages, lines, and words. This API is designed to extract text from images and documents, and it organizes the extracted text in a structured manner.
+
+22. To use **Azure AI Document Intelligence's prebuilt receipt model**, you should create an **Azure AI Document Intelligence or Azure AI services resource**. This resource is specifically designed for document processing tasks, including extracting key information from receipts using Optical Character Recognition (OCR) and deep learning models.
+23. Which data format is accepted by Azure AI Search when you're pushing data to the index? **JSON**
+24. An **indexer converts documents into JSON** and forwards them to a search engine for indexing.
