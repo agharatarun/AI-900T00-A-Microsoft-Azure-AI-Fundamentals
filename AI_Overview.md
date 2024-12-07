@@ -375,7 +375,7 @@ This regression type uses counts instead of data values: Poisson
 
 15. **Statistical analysis cab be broken down into these three processes: Transformation, Visualisation, Modeling**
 
-16. **Mean Absolute Error (MAE):** This is typically used in regression models to measure the average magnitude of errors between predicted and actual values. It is **not** commonly used in clustering models.
+16. **Mean Absolute Error (MAE):** This is typically used in **regression models** to measure the average magnitude of errors between predicted and actual values. It is **not** commonly used in clustering models.
 
 17. **Average Distance to Cluster Center:** This measures the average distance of all points in a cluster to the cluster center (centroid). It helps in evaluating the compactness of clusters.
 
@@ -390,3 +390,8 @@ This regression type uses counts instead of data values: Poisson
 22. To use **Azure AI Document Intelligence's prebuilt receipt model**, you should create an **Azure AI Document Intelligence or Azure AI services resource**. This resource is specifically designed for document processing tasks, including extracting key information from receipts using Optical Character Recognition (OCR) and deep learning models.
 23. Which data format is accepted by Azure AI Search when you're pushing data to the index? **JSON**
 24. An **indexer converts documents into JSON** and forwards them to a search engine for indexing.
+25. **Inference**: This is the process of using a trained machine learning model to make predictions or decisions based on new input data. During inference, the model applies the learned patterns from the training phase to generate output values.
+26. **Training**: This is the process of teaching a machine learning model to recognize patterns in data. During training, the model learns from a labeled dataset by adjusting its parameters to minimize the error between its predictions and the actual values.
+27. **Modeling**: This refers to the process of creating a machine learning model, which includes selecting the appropriate algorithm, defining the model architecture, and training the model on data. Modeling encompasses both the training and inference phases.
+28. What is the process called when a machine learning model calculates an output value based on one or more input values?: **Inference**
+29. 
