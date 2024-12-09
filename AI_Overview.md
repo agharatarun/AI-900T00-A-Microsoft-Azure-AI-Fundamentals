@@ -128,7 +128,7 @@ NLP enables you to create software that can:
 * You can use Microsoft's **Azure AI Language** to build natural language processing solutions. Some features of Azure AI Language include understanding and analyzing text, training conversational language models that can understand spoken or text-based commands, and building intelligent applications.
 * Microsoft's **Azure AI Speech** is another service that can be used to build natural language processing solutions. Azure AI Speech features include speech recognition and synthesis, real-time translations, conversation transcriptions, and more.
 * Microsoft's **Azure AI Translator** uses a **Neural Machine Translation (NMT) model for translation**, which analyzes the semantic context of the text and renders a more accurate and complete translation as a result.
-You can explore Azure AI Language features in the **Azure Language Studio** and Azure AI Speech features in the **Azure Speech Studio**. The service features are available for use and testing in the studios and other programming languages.
+* You can explore Azure AI Language features in the **Azure Language Studio** and Azure AI Speech features in the **Azure Speech Studio**. The service features are available for use and testing in the studios and other programming languages.
 
 -----
 **Text Analysis with the Language Service**
@@ -162,6 +162,7 @@ Resource for Azure AI Language
 You can easily create a question answering solution on Microsoft Azure using Azure AI Language service. Azure AI Language includes a custom question answering feature that enables you to create a knowledge base of question and answer pairs that can be queried using natural language input.
 
 **Adding chit-chat to your bot makes it more conversational and engaging**. The chit-chat feature in QnA maker allows you to easily add a pre-populated set of the top chit-chat, into your knowledge base (KB). This can be a starting point for your bot's personality, and it will save you the time and cost of writing them from scratch.
+
 You can use **Azure AI Language Studio** to create, train, publish, and manage question answering projects. You can write code to create and manage projects using the Azure AI Language REST API or SDK. However, in most scenarios it is easier to use the Language Studio.
 
 -----
@@ -182,37 +183,39 @@ When you are satisfied with the results from the training and testing, you can p
 -----
 https://speech.microsoft.com/
 
-Build voice-enabled, multilingual generative AI apps with fast transcriptions and natural-sounding voices.
-Customize speech in your app for your domain—including OpenAI Whisper model—or give your copilot a branded voice.
-Enable real-time, multi-language speech to speech translation and speech to text transcription of audio streams.
-Run AI models wherever your data resides. Deploy your apps in the cloud or at the edge with containers.
-
-AI speech capabilities enable us to manage home and auto systems with voice instructions, get answers from computers for spoken questions, generate captions from audio, and much more.
+* Build voice-enabled, multilingual generative AI apps with fast transcriptions and natural-sounding voices.
+* Customize speech in your app for your domain—including **OpenAI Whisper model**—or give your copilot a branded voice.
+* Enable real-time, multi-language speech to speech translation and speech to text transcription of audio streams.
+* Run AI models wherever your data resides. Deploy your apps in the cloud or at the edge with containers.
+* AI speech capabilities enable us to manage **home and auto systems with voice instructions**, get answers from computers for spoken questions, generate captions from audio, and much more.
 To enable this kind of interaction, the AI system must support at least two capabilities:
-1. Speech recognition - the ability to detect and interpret spoken input
-2. Speech synthesis - the ability to generate spoken output
+
+1. **Speech recognition** - the ability to detect and interpret spoken input
+2. **Speech synthesis** - the ability to generate spoken output
 Azure AI Speech provides speech to text, text to speech, and speech translation capabilities through speech recognition and synthesis.
 
 **Speech recognition** takes the spoken word and converts it into data that can be processed - often by transcribing it into text. 
-An **acoustic model** that converts the audio signal into phonemes (representations of specific sounds). 
-A **language model** that maps phonemes to words, usually using a statistical algorithm that predicts the most probable sequence of words based on the phonemes.
+* An **acoustic model** that converts the audio signal into phonemes (representations of specific sounds).
+* A **language model** that maps phonemes to words, usually using a **statistical algorithm** that predicts the most probable **sequence of words** based on the phonemes.
 
 **Speech synthesis** is concerned with vocalizing data, usually by converting text to speech. A speech synthesis solution typically requires the following information:
 1. The text to be spoken
 2. The voice to be used to vocalize the speech
-To synthesize speech, the system typically tokenizes the text to break it down into individual words, and assigns phonetic sounds to each word. It then breaks the phonetic transcription into prosodic units (such as phrases, clauses, or sentences) to create phonemes that will be converted to audio format. These phonemes are then synthesized as audio and can be assigned a particular voice, speaking rate, pitch, and volume.
+
+To synthesize speech, the system typically tokenizes the text to break it down into individual words, and assigns phonetic sounds to each word. It then breaks the phonetic transcription into **prosodic units (such as phrases, clauses, or sentences) to create phonemes that will be converted to audio format**. These phonemes are then synthesized as audio and can be assigned a **particular voice, speaking rate, pitch, and volume**.
 
 Azure AI Speech service, which supports many capabilities, including:
-1. **Speech to text**: Real-time transcription & Batch transcription. Speech-to-Text, also known as automatic speech recognition (ASR), is a feature of Speech Services that provides transcription.
-2. **Text to speech**: The service includes multiple pre-defined voices with support for multiple languages and regional pronunciation, including neural voices that leverage neural networks to overcome common limitations in speech synthesis with regard to intonation, resulting in a more natural sounding voice.
+1. **Speech to text**: Real-time transcription & Batch transcription. Speech-to-Text, also known as **automatic speech recognition (ASR)**, is a feature of Speech Services that provides transcription.
+2. **Text to speech**: The service includes multiple pre-defined voices with support for multiple languages and regional pronunciation, including **neural voices that leverage neural networks to overcome common limitations in speech synthesis** with regard to intonation, resulting in a more natural sounding voice.
    
 While both technologies serve to bridge the gap between humans and machines, they operate in opposite directions. **Speech synthesis takes written text and converts it into spoken language, while speech recognition interprets spoken language and converts it into text**.
 A separate module covers speech translation in Azure AI services.
 
 Azure AI Speech is available for use through several tools and programming languages including:
-Studio interfaces
-Command Line Interface (CLI)
-REST APIs and Software Development Kits (SDKs)
+* Studio interfaces
+* Command Line Interface (CLI)
+* REST APIs and Software Development Kits (SDKs)
+  
 You can create Azure AI Speech projects using user interfaces with Speech Studio or Azure AI Studio.
 
 **Resources for Azure AI Speech**
@@ -227,11 +230,10 @@ One of the many challenges of translation between languages is that words don't 
 
 **Literal and semantic translation**: A literal translation is where each word is translated to the corresponding word in the target language. Artificial intelligence systems must be able to understand, not only the words, but also the semantic context in which they're used.
 
-**Text and speech translation**: Text translation can be used to translate documents from one language to another. Speech translation is used to translate between spoken languages, sometimes directly (speech-to-speech translation) and sometimes by translating to an intermediary text format (speech-to-text translation).
+**Text and speech translation**: Text translation can be used to translate documents from one language to another. Speech translation is used to translate between spoken languages, **sometimes directly (speech-to-speech translation) and sometimes by translating to an intermediary text format (speech-to-text translation)**.
 
-Azure AI services:
-**The Azure AI Translator service**, which supports text-to-text translation. The service uses a Neural Machine Translation (NMT) model for translation
-**The Azure AI Speech service**, which enables speech to text and speech-to-speech translation. return the translation as text or an audio stream.
+* **The Azure AI Translator service**, which supports **text-to-text translation**. The service uses a Neural Machine Translation (NMT) model for translation
+* **The Azure AI Speech service**, which enables **speech to text and speech-to-speech translation**. return the translation as text or an audio stream.
 
 There are dedicated Translator and Speech resource types for these services, which you can use if you want to manage access and billing for each service individually.
 
@@ -252,10 +254,10 @@ Azure AI Document Intelligence is the new name for **Azure Form Recognizer**. Yo
 You can use Microsoft's **Azure AI Document Intelligence** to build solutions that manage and accelerate data collection from scanned documents. Features of Azure AI Document Intelligence help automate document processing in applications and workflows, enhance data-driven strategies, and enrich document search capabilities. The service features are available for use and testing in the **Document Intelligence Studio and other programming languages**.
 **Knowledge mining** is the term used to describe solutions that involve extracting information from large volumes of often unstructured data to create a searchable knowledge store. One Microsoft knowledge mining solution is **Azure AI Search**, a private, enterprise, search solution that has tools for building indexes.
 
-Document intelligence describes AI capabilities that support processing text and making sense of information in text. As an extension of optical character recognition (OCR), **document intelligence takes the next step** a person might after reading a form or document. It automates the process of extracting, understanding, and saving the data in text. The ability to extract text, layout, and key-value pairs is known as document analysis. Document analysis provides locations of text on a page identified by **bounding box coordinates**. 
+Document intelligence describes AI capabilities that support processing text and making sense of information in text. As an extension of optical character recognition (OCR), **document intelligence takes the next step** a person might after reading a form or document. It automates the process of extracting, understanding, and saving the data in text. **The ability to extract text, layout, and key-value pairs is known as document analysis**. Document analysis provides locations of text on a page identified by **bounding box coordinates**. 
 
 Azure AI Document Intelligence consists of features grouped by model type:
-1. **Document analysis** - general document analysis that returns structured data representations, including regions of interest and their inter-relationships.
+1. **Document analysis** - general document analysis that **returns structured data representations, including regions of interest and their inter-relationships**.
 2. **Prebuilt models** - process common document types such as invoices, business cards, ID documents, and more. financial services and legal, US tax, US mortgage, and personal identification documents.
 3. **Custom models** - can be trained to identify specific fields that are not included in the existing pretrained models. **Includes custom classification models and document field extraction models** such as the custom generative AI model and custom neural model.
 
@@ -267,8 +269,8 @@ https://learn.microsoft.com/en-us/training/modules/intro-to-azure-search/1-intro
 
 **Azure AI Search** provides the infrastructure and tools to create search solutions that extract data from various structured, semi-structured, and non-structured documents.
 
-It's a Platform as a Service (PaaS) solution. Microsoft manages the infrastructure and availability, allowing your organization to benefit without the need to purchase or manage dedicated hardware resources.
-Azure AI Search exists to complement existing technologies and provides a programmable search engine built on Apache Lucene, an open-source software library. 
+It's a **Platform as a Service (PaaS)** solution. Microsoft manages the infrastructure and availability, allowing your organization to benefit without the need to purchase or manage dedicated hardware resources.
+Azure AI Search exists to complement existing technologies and provides a programmable search engine built on **Apache Lucene**, an open-source software library. 
 
 Azure AI Search comes with the following features:
 
@@ -283,10 +285,10 @@ Azure AI Search comes with the following features:
 
 1. Start with a data source: the storage location of your original data artifacts, such as PDFs, video files, and images. For Azure AI Search, your data source could be files in Azure Storage, or text in a database such as Azure SQL Database or Azure Cosmos DB.
 2. Indexer: automates the movement data from the data source through document cracking and enrichment to indexing. An indexer automates a portion of data ingestion and exports the original file type to JSON (in an action called JSON serialization).  An indexer serializes a source document into JSON before passing it to a search engine for indexing. An indexer automates several steps of data ingestion, reducing the amount of code you need to write.
-3. Document cracking: the indexer opens files and extracts content.
-4. Enrichment: the indexer moves data through AI enrichment, which implements Azure AI on your original data to extract more information. AI enrichment is achieved by adding and combining skills in a skillset. A skillset defines the operations that extract and enrich data to make it searchable. These AI skills can be either built-in skills, such as text translation or Optical Character Recognition (OCR), or custom skills that you provide. Examples of AI enrichment include adding captions to a photo and evaluating text sentiment. AI enriched content can be sent to a knowledge store, which persists output from an AI enrichment pipeline in tables and blobs in Azure Storage for independent analysis or downstream processing. A skillset requires an indexer, but an indexer doesn't require a skillset. You can use indexers to create a search index from textual content in any supported data source. **Without AI skillsets, you can still perform full text search over indexes containing alphanumeric content.** Detecting the sentiment in content requires a skillset that includes the Sentiment Analysis skill.
+* Document cracking: the indexer opens files and extracts content.
+* Enrichment: the indexer moves data through AI enrichment, which implements Azure AI on your original data to extract more information. **AI enrichment is achieved by adding and combining skills in a skillset.** A skillset defines the operations that extract and enrich data to make it searchable. These AI skills can be either built-in skills, such as text translation or Optical Character Recognition (OCR), or custom skills that you provide. **Examples of AI enrichment include adding captions to a photo and evaluating text sentiment.** AI enriched content can be **sent to a knowledge store**, which persists output from an AI enrichment pipeline in tables and blobs in Azure Storage for independent analysis or downstream processing. **A skillset requires an indexer, but an indexer doesn't require a skillset.** You can use indexers to create a search index from textual content in any supported data source. **Without AI skillsets, you can still perform full text search over indexes containing alphanumeric content.** Detecting the sentiment in content requires a skillset that includes the **Sentiment Analysis skill**.
 5. Push to index: the serialized JSON data populates the search index.
-6. The result is a populated search index which can be explored through queries. When users make a search query such as "coffee", the search engine looks for that information in the search index. A search index has a structure similar to a table, known as the index schema. A typical search index schema contains fields, the field's data type (such as string), and field attributes. The fields store searchable text, and the field attributes allow for actions such as filtering and sorting. Below is an example of a search index schema:
+6. The result is a populated search index which can be explored through queries. When users make a search query such as "coffee", the search engine looks for that information in the search index. **A search index has a structure similar to a table, known as the index schema.** A typical search index schema contains **fields**, the field's **data type** (such as string), and **field attributes**. The fields store searchable text, and the field attributes allow for actions such as filtering and sorting. Below is an example of a search index schema:
 
 A screenshot of the structure of an index schema in json including key phrases and image tags.
 
