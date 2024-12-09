@@ -34,7 +34,7 @@ Some features of Azure AI Vision include:
 1. Image Analysis: capabilities for analyzing images and video, and extracting descriptions, tags, objects, and text. recognize products on shelves, search photos with image retrieval, detect sensitive content, detect objects etc.  
 2. Face: capabilities that enable you to build face detection and facial recognition solutions. Liveness detection(face in camera is real or fake), portrait processing, photo id matching
 3. Optical Character Recognition (OCR): capabilities for extracting printed or handwritten text from images, enabling access to a digital version of the scanned text.
-4. spatial analysis: Video Retrieval and summary (spilled liquid on floor), count people in area, detect when peope crosses a line, enter/exit zone, Monitor social distancing
+4. **spatial analysis**: Video Retrieval and summary (spilled liquid on floor), count people in area, detect when peope crosses a line, enter/exit zone, Monitor social distancing
 -----
 One of the most common machine learning model architectures for computer vision is a **convolutional neural network (CNN)**, a type of deep learning architecture. CNNs use **filters to extract numeric feature maps from images**, and then feed the feature values into a deep learning model to generate a label prediction.
 
@@ -101,9 +101,9 @@ Automating text processing can improve the speed and efficiency of work by remov
 The ability for computer systems to process written and printed text is an area of AI where computer vision intersects with **natural language processing**. Vision capabilities are needed to "read" the text, and then natural language processing capabilities make sense of it. Azure AI Vision's Read API is the OCR engine that powers text extraction from **images, PDFs, and TIFF files**. **The Read API, otherwise known as Read OCR engine**, uses the latest recognition models and is optimized for images that have a significant amount of text or have considerable visual noise. 
 
 Calling the Read API returns results arranged into the following hierarchy:
-Pages - One for each page of text, including information about the page size and orientation.
-Lines - The lines of text on a page.
-Words - The words in a line of text, including the bounding box coordinates and text itself.
+* Pages - One for each page of text, including information about the page size and orientation.
+* Lines - The lines of text on a page.
+* Words - The words in a line of text, including the bounding box coordinates and text itself.
 
 ![image](https://github.com/user-attachments/assets/85b81319-4352-4f5a-8961-668eeb6181bd)
 
@@ -111,9 +111,9 @@ Azure resources for AI Vision
 1. Azure AI Vision
 2. Azure AI Services
 Once you've created a resource, there are several ways to use Azure AI Vision's Read API:
-1. Vision Studio
-2. REST API
-3. Software Development Kits (SDKs): Python, C#, JavaScript
+* Vision Studio
+* REST API
+* Software Development Kits (SDKs): Python, C#, JavaScript
 
 
 # **Understand natural language processing**
@@ -125,32 +125,32 @@ NLP enables you to create software that can:
 3. Automatically translate spoken or written phrases between languages.
 4. Interpret commands and determine appropriate actions.
 
-You can use Microsoft's **Azure AI Language** to build natural language processing solutions. Some features of Azure AI Language include understanding and analyzing text, training conversational language models that can understand spoken or text-based commands, and building intelligent applications.
-Microsoft's **Azure AI Speech** is another service that can be used to build natural language processing solutions. Azure AI Speech features include speech recognition and synthesis, real-time translations, conversation transcriptions, and more.
-Microsoft's **Azure AI Translator** uses a **Neural Machine Translation (NMT) model for translation**, which analyzes the semantic context of the text and renders a more accurate and complete translation as a result.
-You can explore Azure AI Language features in the Azure Language Studio and Azure AI Speech features in the Azure Speech Studio. The service features are available for use and testing in the studios and other programming languages.
+* You can use Microsoft's **Azure AI Language** to build natural language processing solutions. Some features of Azure AI Language include understanding and analyzing text, training conversational language models that can understand spoken or text-based commands, and building intelligent applications.
+* Microsoft's **Azure AI Speech** is another service that can be used to build natural language processing solutions. Azure AI Speech features include speech recognition and synthesis, real-time translations, conversation transcriptions, and more.
+* Microsoft's **Azure AI Translator** uses a **Neural Machine Translation (NMT) model for translation**, which analyzes the semantic context of the text and renders a more accurate and complete translation as a result.
+You can explore Azure AI Language features in the **Azure Language Studio** and Azure AI Speech features in the **Azure Speech Studio**. The service features are available for use and testing in the studios and other programming languages.
 
 -----
 **Text Analysis with the Language Service**
 
 Azure AI Language is a cloud-based service that includes features for understanding and analyzing text. Azure AI Language includes various features that support sentiment analysis, key phrase identification, text summarization, and conversational language understanding.
 
-Frequency analysis: **Term frequency - inverse document frequency (TF-IDF)** is a common technique in which a score is calculated based on how often a word or term appears in one document compared to its more general frequency across the entire collection of documents. Using this technique, a high degree of relevance is assumed for words that appear frequently in a particular document, but relatively infrequently across a wide range of other documents.
+**Frequency analysis:** **Term frequency - inverse document frequency (TF-IDF)** is a common technique in which a score is calculated based on how often a word or term appears in one document compared to its more general frequency across the entire collection of documents. Using this technique, a high degree of relevance is assumed for words that appear frequently in a particular document, but relatively infrequently across a wide range of other documents.
 
-text classification: Another useful text analysis technique is to use a classification algorithm, such as logistic regression, to train a machine learning model that classifies text based on a known set of categorizations. A common application of this technique is to train a model that classifies text as positive or negative in order to perform sentiment analysis or opinion mining.
+**text classification:** Another useful text analysis technique is to use a classification algorithm, such as logistic regression, to train a machine learning model that classifies text based on a known set of categorizations. A common application of this technique is to train a model that classifies text as positive or negative in order to perform sentiment analysis or opinion mining.
 
 ![image](https://github.com/user-attachments/assets/20e66364-c096-4219-942b-afc6d7cdb3b9)
 
 Azure AI Language is a part of the Azure AI services offerings that can perform advanced natural language processing over unstructured text. Azure AI Language's **text analysis** features include:
 
-1. Named entity recognition identifies people, places, events, and more. This feature can also be customized to extract custom categories. Named Entity Recognition (NER) is the ability to identify different entities in text and categorize them into pre-defined classes or types such as: person, location, event, product, and organization.
+1. **Named entity recognition identifies people, places, events, and more.** This feature can also be customized to extract custom categories. Named Entity Recognition (NER) is the ability to identify different entities in text and categorize them into pre-defined classes or types such as: person, location, event, product, and organization.
 In this question, the square brackets indicate the entities such as DateTime, PersonType, Skill.
-2. Entity linking identifies known entities together with a link to Wikipedia.
+2. **Entity linking identifies known entities together with a link to Wikipedia**.
 3. Personal identifying information (PII) detection identifies personally sensitive information, including personal health information (PHI).
 4. Language detection identifies the language of the text and returns a language code such as "en" for English.
 5. Sentiment analysis and opinion mining identifies whether text is positive or negative.
 6. Summarization summarizes text by identifying the most important information.
-6. Key phrase extraction lists the main concepts from unstructured text.
+6. **Key phrase extraction** lists the main concepts from unstructured text.
 
 Resource for Azure AI Language
 1. A **Language** resource - manage access and billing for the resource separately from other services.
@@ -158,19 +158,23 @@ Resource for Azure AI Language
 
 -----
 **Question answering with the Language Service**
+
 You can easily create a question answering solution on Microsoft Azure using Azure AI Language service. Azure AI Language includes a custom question answering feature that enables you to create a knowledge base of question and answer pairs that can be queried using natural language input.
+
 **Adding chit-chat to your bot makes it more conversational and engaging**. The chit-chat feature in QnA maker allows you to easily add a pre-populated set of the top chit-chat, into your knowledge base (KB). This can be a starting point for your bot's personality, and it will save you the time and cost of writing them from scratch.
 You can use **Azure AI Language Studio** to create, train, publish, and manage question answering projects. You can write code to create and manage projects using the Azure AI Language REST API or SDK. However, in most scenarios it is easier to use the Language Studio.
 
 -----
 **conversational language understanding**
-Azure AI Language service supports **conversational language understanding (CLU)**. You can use CLU to build language models that interpret the meaning of phrases in a conversational setting. One example of a CLU application is one that's able to turn devices on and off based on speech.
+
+Azure AI Language service supports **conversational language understanding (CLU)**. You can use CLU to build language models that interpret the meaning of phrases in a conversational setting. **One example of a CLU application is one that's able to turn devices on and off based on speech**.
+
 **Language Understanding (LUIS)** is a cloud-based API service that applies custom machine-learning intelligence to a user's conversational, natural language text to predict overall meaning, and pull out relevant, detailed information.
-Design your LUIS model with categories of user intentions called intents. Each intent needs examples of user utterances. Each utterance can provide data that needs to be extracted with machine-learning entities.
+Design your LUIS model with categories of user intentions called **intents**. **Each intent needs examples of user utterances**. Each utterance can provide data that needs to be extracted with machine-learning **entities**.
 To work with conversational language understanding (CLU), you need to take into account three core concepts: **utterances, entities, and intents**.
 
 Resources for conversational language understanding
-1. Azure AI Language: You can use a language resource for authoring and prediction.
+1. **Azure AI Language: You can use a language resource for authoring and prediction.**
 2. Azure AI services: A general resource that includes CLU along with many other Azure AI services. You can only use this type of resource for prediction.
 
 When you are satisfied with the results from the training and testing, you can publish your Conversational Language Understanding application to a prediction resource for consumption.
