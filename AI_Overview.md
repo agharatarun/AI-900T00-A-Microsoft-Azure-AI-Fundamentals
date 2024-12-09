@@ -411,32 +411,32 @@ This regression type uses counts instead of data values: Poisson
 * The purpose of authoring a model in conversational language understanding is to define **entities, intents, and utterances for training**. When authoring a model, you define: Entities: Specific pieces of information that the model needs to extract from user input (e.g., dates, names, locations). Intents: The purpose or goal behind a user's input (e.g., booking a flight, checking the weather). Utterances: Example phrases or sentences that users might say to express their intents. By defining these components, you train the model to understand and respond accurately to user inputs. **To connect client applications to prediction resources:** This is part of the deployment and integration process, not the authoring process. **To publish language models for client consumption:** This is the final step after authoring and training the model, where the model is made available for use by client applications.
 
 * What are the two primary capabilities supported by AI speech systems? : **Speech recognition and synthesis**
-** Speech recognition and transcription
-** Speech synthesis and natural language processing
-** Speech recognition and synthesis
-** Speech analysis and sentiment detection
+  * Speech recognition and transcription
+  * Speech synthesis and natural language processing
+  * Speech recognition and synthesis
+  * Speech analysis and sentiment detection
 
 * The main purpose of speech synthesis is to convert text to spoken output. 
-** To detect spoken patterns in audio files: This task is typically handled by speech recognition systems, which analyze audio files to identify and transcribe spoken words.
-** To generate phonetic transcriptions: This is also a function of speech recognition systems, where the spoken language is converted into phonetic symbols or text.
-** **To convert text to spoken output: This is the primary function of speech synthesis, also known as text-to-speech (TTS).** It involves generating audible speech from written text, allowing machines to "speak" the text in a natural-sounding voice.
-** To analyze prosodic features in speech: This task involves examining the rhythm, stress, and intonation of speech, which is more related to speech analysis and processing rather than synthesis.
+  * To detect spoken patterns in audio files: This task is typically handled by speech recognition systems, which analyze audio files to identify and transcribe spoken words.
+  * To generate phonetic transcriptions: This is also a function of speech recognition systems, where the spoken language is converted into phonetic symbols or text.
+  * **To convert text to spoken output: This is the primary function of speech synthesis, also known as text-to-speech (TTS).** It involves generating audible speech from written text, allowing machines to "speak" the text in a natural-sounding voice.
+  * To analyze prosodic features in speech: This task involves examining the rhythm, stress, and intonation of speech, which is more related to speech analysis and processing rather than synthesis.
 
 * What are the two approaches provided by Azure AI Search to create and load JSON documents into an index? **Push method and Pull method**
-** Push method and Pull method
-** Export method and Import method
-** REST API method and SDK method
-** Source method and Target method
+  * Push method and Pull method
+  * Export method and Import method
+  * REST API method and SDK method
+  * Source method and Target method
 
 * What is the default search syntax for queries in Azure AI Search?: Simple query syntax
 * The role of attention layers in transformer models is to evaluate the semantic relationships between tokens.
-** **To predict the next token in a sequence: This task is typically handled by the overall architecture of the model, such as in language models like GPT**. While attention mechanisms contribute to this process, their primary role is not to predict the next token directly.
-** **To evaluate the semantic relationships between tokens: This is the correct role of attention layers**. Attention mechanisms allow the model to weigh the importance of different tokens in a sequence when making predictions. By evaluating the relationships between tokens, the model can focus on relevant parts of the input, improving its understanding and performance.
-** **To decompose training text into tokens: This task is handled by tokenization**, which is a preprocessing step that breaks down text into smaller units (tokens). Attention layers do not perform tokenization.
-** **To generate embeddings for tokens: This task is typically handled by embedding layers**, which convert tokens into dense vector representations. Attention layers use these embeddings to evaluate relationships but do not generate them.
+  * **To predict the next token in a sequence: This task is typically handled by the overall architecture of the model, such as in language models like GPT**. While attention mechanisms contribute to this process, their primary role is not to predict the next token directly.
+  * **To evaluate the semantic relationships between tokens: This is the correct role of attention layers**. Attention mechanisms allow the model to weigh the importance of different tokens in a sequence when making predictions. By evaluating the relationships between tokens, the model can focus on relevant parts of the input, improving its understanding and performance.
+  * **To decompose training text into tokens: This task is handled by tokenization**, which is a preprocessing step that breaks down text into smaller units (tokens). Attention layers do not perform tokenization.
+  * **To generate embeddings for tokens: This task is typically handled by embedding layers**, which convert tokens into dense vector representations. Attention layers use these embeddings to evaluate relationships but do not generate them.
 
 * What is one way to access Azure OpenAI Service?: **By registering for limited access**
-** By registering for limited access
-** By downloading the Azure OpenAI Studio app
-** By purchasing a subscription from the Microsoft Store
-** All of the above
+  * By registering for limited access
+  * By downloading the Azure OpenAI Studio app
+  * By purchasing a subscription from the Microsoft Store
+  * All of the above
