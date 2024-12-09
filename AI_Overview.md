@@ -479,3 +479,4 @@ This regression type uses counts instead of data values: Poisson
 * **The invoice model extracts key information from sales invoices and is suitable for extracting information from sales account documents.** 
 * **The ID document model** is optimized to analyze and extract key information from US driver’s licenses and international passport biographical pages.
 * **The business card model, receipt model, and language model are NOT** suitable to extract information from passports or sales account documents.
+* can azure **q&a maker service determine the intent of a user utterance?: No,** the Azure Q&A Maker service does not perform intent recognition on the user's input. QnA Maker is designed to find the best matching answer from a knowledge base based on the input text. It does not analyze the intent behind the user's query. For intent recognition, you would need to use a different service, such as Azure Language Understanding (LUIS) or Azure Bot Service
