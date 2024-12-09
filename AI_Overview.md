@@ -480,3 +480,22 @@ This regression type uses counts instead of data values: Poisson
 * **The ID document model** is optimized to analyze and extract key information from US driver’s licenses and international passport biographical pages.
 * **The business card model, receipt model, and language model are NOT** suitable to extract information from passports or sales account documents.
 * can azure **q&a maker service determine the intent of a user utterance?: No,** the Azure Q&A Maker service does not perform intent recognition on the user's input. QnA Maker is designed to find the best matching answer from a knowledge base based on the input text. It does not analyze the intent behind the user's query. For intent recognition, you would need to use a different service, such as Azure Language Understanding (LUIS) or Azure Bot Service
+* **Entity Linking, PII detection, and sentiment analysis are all elements of the Azure AI Service for Azure AI Language**. Azure AI Vision deals with image processing. Azure AI Content Moderator is an Azure AI Services service that is used to check text, image, and video content for material that is potentially offensive.
+* Regression is an example of supervised machine learning due to the use of historical data with known label values to train a model. Regression does not rely on randomly generated data for training.
+* Which three parts of the machine learning process does the Azure AI Vision eliminate the need for? Each correct answer presents part of the solution.
+  * Azure resource provisioning
+  * choosing a model
+  * evaluating a model
+  * inferencing
+  * training a model
+     * The computer vision service **eliminates the need for choosing, training, and evaluating a model** by providing pre-trained models. To use computer vision, you must create an Azure resource. The use of computer vision involves inferencing (Inferencing is how you run live data through a trained AI model to make a prediction or solve a task.).
+
+* Which two features of Azure AI Services allow you to identify issues from support question data, as well as identify any people and products that are mentioned? Each correct answer presents part of the solution.
+  * Azure AI Bot Service
+  * Conversational Language Understanding
+  * key phrase extraction
+  * named entity recognition
+  * Azure AI Speech service
+    * **Key phrase extraction is used to extract key phrases to identify the main concepts in a text**. It enables a company to identify the main talking points from the support question data and allows them to identify common issues. **Named entity recognition can identify and categorize entities in unstructured text, such as people, places, organizations, and quantities.** The Azure AI Speech service, Conversational Language Understanding, and Azure AI Bot Service are not designed for identifying key phrases or entities.
+* Time-series forecasting, regression, and classification are supervised machine learning models. Automated ML learning can predict categories or classes by using a classification algorithm, as well as numeric values as part of the regression algorithm, and at a future point in time by using time-series data. Inference pipeline is not a machine learning model. Clustering is unsupervised machine learning and automated ML only works with supervised learning algorithms.
+* **Extracting key phrases from text to identify the main terms is an NLP workload.** Predicting whether customers are likely to buy a product based on previous purchases requires the development of a machine learning model. Monitoring for sudden increases in quantity of failed sign-in attempts is a different workload. Identifying objects in landscape images is a computer vision workload.
