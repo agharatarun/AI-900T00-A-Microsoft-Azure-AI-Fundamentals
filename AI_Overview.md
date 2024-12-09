@@ -443,3 +443,39 @@ This regression type uses counts instead of data values: Poisson
   * By downloading the Azure OpenAI Studio app
   * By purchasing a subscription from the Microsoft Store
   * All of the above
+
+* Text normalization: Before generating tokens, you may choose to normalize the text **by removing punctuation and changing all words to lower case**. For analysis that relies purely on word frequency, this approach improves overall performance. However, some semantic meaning may be lost - for example, consider the sentence "Mr Banks has worked in many banks.". You may want your analysis to differentiate between the person "Mr Banks" and the "banks" in which he has worked. You may also want to consider "banks." as a separate token to "banks" because the inclusion of a period provides the information that the word comes at the end of a sentence
+* **Stop word removal.** Stop words are words that should be excluded from the analysis. For example, "the", "a", or "it" make text easier for people to read but add little semantic meaning. By excluding these words, a text analysis solution may be better able to identify the important words.
+* **n-grams are multi-term phrases such as "I have" or "he walked"**. A single word phrase is a unigram, a two-word phrase is a bi-gram, a three-word phrase is a tri-gram, and so on. By considering words as groups, a machine learning model can make better sense of the text.
+* **Stemming (Lemmatization)** is a technique in which algorithms are applied to **consolidate words before counting them**, so that words with the same root, like "power", "powered", and "powerful", are interpreted as being the same token. **Lemmatization**, also known as stemming, is part of language processing, not speech synthesis.
+* **Frequency analysis** counts how often a word appears in a text. N-grams extend frequency analysis to include multi-term phrases.
+* **Vectorization** captures semantic relationships between words by assigning them to locations in n-dimensional space.
+* **Tokenization** is part of speech synthesis that involves breaking text into individual words such that each word can be assigned phonetic sounds.
+* **Transcribing is part of speech recognition, which involves converting speech into a text representation**.
+* Key phrase extraction is part of language processing, not speech synthesis. 
+
+* IMP: The Universal Language Model used by the speech-to-text API is optimized for **conversational and dictation** scenarios. The acoustic, language, and pronunciation scenarios require developing your own model. By being optimized for these scenarios, the Universal Language Model ensures high accuracy and reliability in transcribing spoken language, whether it's in a casual conversation (recognizing informal language, slang, and varying speech patterns that are typical in dialogues between people) or a formal dictation (may be dictating a document, email, or any other form of written communication) setting. 
+
+* You need to identify numerical values that represent the probability of humans developing diabetes based on age and body fat percentage. Which type of machine learning model should you use?: **logistic regression**
+  * hierarchical clustering
+  * linear regression
+  * logistic regression
+  * Multiple linear regression
+    * Multiple linear regression models a relationship between two or more features and a single label.
+    * Linear regression uses a single feature.
+    * Logistic regression is a type of classification model, which returns either a Boolean value or a categorical decision.
+    * Hierarchical clustering groups data points that have similar characteristics.
+
+* **Weather temperature and weekday or weekend are features that provide a weather temperature for a given day **and a value based on whether the day is on a weekend or weekday. These are input variables for the model to help predict the labels for e-scooter battery levels, number of hires, and distance traveled. E-scooter battery levels, number of hires, and distance traveled are numeric labels you are attempting to predict through the machine learning model.
+* Which two artificial intelligence (AI) workload scenarios are examples of natural language processing (NLP)? Each correct answer presents a complete solution.
+  * extracting handwritten text from online images
+  * generating tags and descriptions for images
+  * monitoring network traffic for sudden spikes
+  * performing sentiment analysis on social media data
+  * translating text between different languages from product reviews
+    * **Translating text between different languages** from product reviews is an NLP workload that uses the Azure AI Translator service and is part of Azure AI Services. It can provide text translation of supported languages in real time.
+    * **Performing sentiment analysis** on social media data is an NLP that uses the sentiment analysis feature of the Azure AI Service for Language. It can provide sentiment labels, such as negative, neutral, and positive for text-based sentences and documents.
+
+* **The invoice model extracts key information from sales invoices and is suitable for extracting information from sales account documents.** 
+* **The ID document model** is optimized to analyze and extract key information from US driver’s licenses and international passport biographical pages.
+* **The business card model, receipt model, and language model are NOT** suitable to extract information from passports or sales account documents.
