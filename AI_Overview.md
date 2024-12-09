@@ -24,17 +24,21 @@ https://portal.vision.cognitive.azure.com/gallery/featured
 5. Face detection, analysis, and recognition - Face detection is a specialized form of object detection that locates human faces in an image. This can be combined with classification and facial geometry analysis techniques to recognize individuals based on their **facial features**.
 6. Optical character recognition (OCR) - Optical character recognition is a technique used to **detect and read text in image**
 
-Classification is used to predict categories of data. It can predict which category or class an item of data belongs to. In this example, a machine learning model trained by using classification with labeled data can be used to determine the type of bone fracture in a new scan that is not labeled already. Featurization is not a machine learning type. Regression is used to predict numeric values. Clustering analyzes unlabeled data to find similarities in the data.
+* Classification is used to predict categories of data. It can predict which category or class an item of data belongs to. A machine learning model trained by using classification with labeled data can be used to determine the type of bone fracture in a new scan that is not labeled already. 
+* Featurization is not a machine learning type. 
+* Regression is used to predict numeric values. 
+* Clustering analyzes unlabeled data to find similarities in the data.
 
 You can use Microsoft's Azure AI Vision to develop computer vision solutions.
 Some features of Azure AI Vision include:
-1. Image Analysis: capabilities for analyzing images and video, and extracting descriptions, tags, objects, and text.
-2. Face: capabilities that enable you to build face detection and facial recognition solutions.
+1. Image Analysis: capabilities for analyzing images and video, and extracting descriptions, tags, objects, and text. recognize products on shelves, search photos with image retrieval, detect sensitive content, detect objects etc.  
+2. Face: capabilities that enable you to build face detection and facial recognition solutions. Liveness detection(face in camera is real or fake), portrait processing, photo id matching
 3. Optical Character Recognition (OCR): capabilities for extracting printed or handwritten text from images, enabling access to a digital version of the scanned text.
+4. spatial analysis: Video Retrieval and summary (spilled liquid on floor), count people in area, detect when peope crosses a line, enter/exit zone, Monitor social distancing
 -----
-One of the most common machine learning model architectures for computer vision is a **convolutional neural network (CNN)**, a type of deep learning architecture. CNNs use filters to extract numeric feature maps from images, and then feed the feature values into a deep learning model to generate a label prediction.
+One of the most common machine learning model architectures for computer vision is a **convolutional neural network (CNN)**, a type of deep learning architecture. CNNs use **filters to extract numeric feature maps from images**, and then feed the feature values into a deep learning model to generate a label prediction.
 
-Transformers and multi-modal models
+**Transformers and multi-modal models**
 
 **Transformers** work by processing huge volumes of data, and encoding language tokens (representing individual words or phrases) as vector-based embeddings (arrays of numeric values). You can think of an embedding as representing a set of dimensions that each represent some semantic attribute of the token. The embeddings are created such that tokens that are commonly used in the same context are closer together dimensionally than unrelated words.
 
