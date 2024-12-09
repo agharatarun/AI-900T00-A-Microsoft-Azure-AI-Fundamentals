@@ -354,7 +354,7 @@ The major disadvantage to polynomial curves is that they often extrapolate poorl
 We've seen how multiple regression can fit several linear relationships at the same time. There's no need for these to be limited to linear relationships, though. Curves of all kinds can be used for these relationships where appropriate. Although you should take care not to use curves such as polynomials with multiple features where they're not necessary. This is because the relationships can end up very complex, which makes it harder to understand the models and assess whether they'll make predictions that don't make sense from a real-world standpoint.
 
 # **Q&A**
-1. You have an AI solution that provides users with the ability to control smart devices by using verbal commands. Which two types of natural language processing (NLP) workloads does the solution use? Each correct answer presents part of the solution. Considering the scenario described where the goal is to control smart devices using voice commands, the most appropriate choice would be to use **speech-to-text conversion as the first step** in the process and **then apply language modeling to** generate consistent and meaningful responses or actions based on the commands recognized in the produced text. This could allow the AI to understand the users' intent and respond appropriately.
+* You have an AI solution that provides users with the ability to control smart devices by using verbal commands. Which two types of natural language processing (NLP) workloads does the solution use? Each correct answer presents part of the solution. Considering the scenario described where the goal is to control smart devices using voice commands, the most appropriate choice would be to use **speech-to-text conversion as the first step** in the process and **then apply language modeling to** generate consistent and meaningful responses or actions based on the commands recognized in the produced text. This could allow the AI to understand the users' intent and respond appropriately.
 Key phrase extraction could also work but is more complex because an additional layer would have to be added that understands user intent based on the combination of keywords extracted. But it would become complex and probably less efficient as well. Language modeling solves this problem natively. Language modeling and key phrase extraction are indeed important NLP workloads, but they are not directly related to controlling smart devices using verbal commands. Language Modeling: This involves predicting the next word in a sequence, which is useful for tasks like text generation and autocomplete. Key Phrase Extraction: This is used to identify important phrases within a text, which is more relevant for text analysis and summarization. For controlling smart devices with verbal commands, the primary NLP workloads are speech-to-text (to convert spoken commands into text) and text-to-speech (to convert text responses into spoken words). So, the correct answers for your AI solution would be A - text-to-speech and E - speech-to-text. I see where the confusion might come from. Both explanations are correct but focus on different aspects of the process.
 Speech-to-Text and Text-to-Speech: These are essential components for controlling smart devices with verbal commands. Speech-to-text converts spoken commands into text, and text-to-speech converts text responses back into spoken words. These are the primary NLP workloads involved in the interaction between the user and the smart device.
 Language Modeling: This is an additional layer that helps in understanding the user's intent and generating appropriate responses or actions based on the recognized text. After converting speech to text, language modeling can be applied to interpret the commands and decide the actions to be taken by the smart device.
@@ -363,97 +363,80 @@ So, in summary:
 Language Modeling enhances the system's ability to understand and respond to user commands effectively.**
 Both aspects are crucial for a comprehensive solution, but the primary focus for enabling verbal commands is on speech-to-text and text-to-speech.
 
-3. The metric that is not used when training models in Custom Vision is d. F1 Score. Custom Vision primarily uses **Precision, Recall, and Mean Average Precision (mAP)** to evaluate model performance
-
-4. **Mean Squared Error (MSE):** This is typically used in **regression models**, not classification models. It measures the average of the squares of the errors—that is, the average squared difference between the estimated values and the actual value. MSE is useful for evaluating how well a regression model fits the data. **Root Mean Squared Error (RMSE):** Similar to MSE, RMSE is used in regression models to measure the square root of the average squared differences between predicted and actual values. It is not used for classification models.
-5. **Coefficient of determination (R2):** This metric is used in **regression models** to measure the proportion of the variance in the dependent variable that is predictable from the independent variables. It is not used for classification models.
-6. **Precision: This is a metric used in classification models.** It measures the accuracy of the positive predictions. Precision is the ratio of correctly predicted positive observations to the total predicted positives. It is particularly useful when the cost of false positives is high.
-
-7. **Silhouette: This metric is used to evaluate clustering models**, not classification models. The silhouette score measures how similar an object is to its own cluster compared to other clusters. It ranges from -1 to 1, where a high value indicates that the object is well matched to its own cluster and poorly matched to neighboring clusters. Which metric can be used to evaluate the quality of clusters?: **Silhouette**
-8. The fraction of time when the model is correct is known as: Accuracy. Accuracy is useful when the classes are balanced.
-9. Which of these confirms how often the model is correct: Precision. Precision is useful when the cost of false positives is high.
-10. Which value identifies how much the model finds all there is to find?: Recall. Recall is useful when the cost of false negatives is high.
-11. F1 Score: **This metric is used in classification models, especially when dealing with imbalanced datasets**. The F1-score is the harmonic mean of Precision and Recall, providing a balance between the two. It is particularly useful when you need to consider both false positives and false negatives. This is the weighted average of Precision and Recall. It is useful when you need a balance between Precision and Recall, especially when the class distribution is imbalanced.
-
-12. **Ordinal Regression:** This type of regression is used when the dependent variable is ordinal, meaning it has a natural order but the intervals between the values are not necessarily equal. For example, **predicting the rank of a student in a class**.
+* **Mean Squared Error (MSE):** This is typically used in **regression models**, not classification models. It measures the average of the squares of the errors—that is, the average squared difference between the estimated values and the actual value. MSE is useful for evaluating how well a regression model fits the data. **Root Mean Squared Error (RMSE):** Similar to MSE, RMSE is used in regression models to measure the square root of the average squared differences between predicted and actual values. It is not used for classification models.
+* IMP: **Mean Absolute Error (MAE):** This is typically used in **regression models** to measure the average magnitude of errors between predicted and actual values. It is **not** commonly used in clustering models.
+* **Coefficient of determination (R2):** This metric is used in **regression models** to measure the proportion of the variance in the dependent variable that is predictable from the independent variables. It is not used for classification models.
+* **Ordinal Regression:** This type of regression is used when the dependent variable is ordinal, meaning it has a natural order but the intervals between the values are not necessarily equal. For example, **predicting the rank of a student in a class**.
 This regression type is used to predict a variable that can be considered as a label: Ordinal
-
-13. **Linear Regression**: This is used to predict a continuous dependent variable based on one or more independent variables. It assumes a linear relationship between the dependent and independent variables. **For example, predicting house prices based on features like size and location**.
-
-14. **Poisson Regression**: This is used for modeling count data and is appropriate when the dependent variable represents counts or the number of times an event occurs. For example, **predicting the number of customer complaints received in a day**.
+* **Linear Regression**: This is used to predict a continuous dependent variable based on one or more independent variables. It assumes a linear relationship between the dependent and independent variables. **For example, predicting house prices based on features like size and location**.
+* **Poisson Regression**: This is used for modeling count data and is appropriate when the dependent variable represents counts or the number of times an event occurs. For example, **predicting the number of customer complaints received in a day**.
 This regression type uses counts instead of data values: Poisson
 
-15. **Support Vector Machine (SVM): While SVM is primarily used for classification tasks**, it can also be adapted for regression (SVR - Support Vector Regression). It tries to find the best fit line within a certain margin of tolerance. However, it is not typically used to predict a variable that can be considered as a label.
+* **Support Vector Machine (SVM): While SVM is primarily used for classification tasks**, it can also be adapted for regression (SVR - Support Vector Regression). It tries to find the best fit line within a certain margin of tolerance. However, it is not typically used to predict a variable that can be considered as a label.
+* The metric that is not used when training models in Custom Vision is d. F1 Score. Custom Vision primarily uses **Precision, Recall, and Mean Average Precision (mAP)** to evaluate model performance
+* **Precision: This is a metric used in classification models.** It measures the accuracy of the positive predictions. Precision is the ratio of correctly predicted positive observations to the total predicted positives. It is particularly useful when the cost of false positives is high.
+* The **fraction of time when the model is correct is known as: Accuracy**. Accuracy is useful when the classes are balanced.
+* Which of these confirms **how often the model is correct: Precision**. Precision is useful when the cost of false positives is high.
+* Which value identifies how much the model **finds all there is to find?: Recall**. Recall is useful when the cost of false negatives is high.
+* F1 Score: **This metric is used in classification models, especially when dealing with imbalanced datasets**. The F1-score is the harmonic mean of Precision and Recall, providing a balance between the two. It is particularly useful when you need to consider both false positives and false negatives. This is the weighted average of Precision and Recall. It is useful when you need a balance between Precision and Recall, especially when the class distribution is imbalanced.
 
-16. **Statistical analysis cab be broken down into these three processes: Transformation, Visualisation, Modeling**
+  
+* **Silhouette: This metric is used to evaluate clustering models**, not classification models. The silhouette score measures how similar an object is to its own cluster compared to other clusters. It ranges from -1 to 1, where a high value indicates that the object is well matched to its own cluster and poorly matched to neighboring clusters. Which metric can be used to evaluate the quality of clusters?: **Silhouette**
+* **Average Distance to Cluster Center:** This measures the average distance of all points in a cluster to the cluster center (centroid). It helps in evaluating the compactness of clusters.
+* **Average Distance to Other Center:** This measures the average distance of points in one cluster to the centers of other clusters. It helps in evaluating the separation between clusters.
+* **Number of Points:** This simply counts the number of data points in each cluster. While it can provide some information about the distribution of data points across clusters, it is not a standard metric for evaluating clustering performance.
 
-17. IMP: **Mean Absolute Error (MAE):** This is typically used in **regression models** to measure the average magnitude of errors between predicted and actual values. It is **not** commonly used in clustering models.
+* **Statistical analysis cab be broken down into these three processes: Transformation, Visualisation, Modeling**
+* **Tagging Images:** This involves identifying and labeling objects, scenes, and activities within an image. **Azure AI Vision**, for example, can automatically generate tags for images based on their content, making it easier to organize and search through large collections of images
+* The Azure AI Vision's Read API provides results arranged in **pages, lines, and words**. This API is designed to extract text from images and documents, and it organizes the extracted text in a structured manner.
+* To use **Azure AI Document Intelligence's prebuilt receipt model**, you should create an **Azure AI Document Intelligence or Azure AI services resource**. This resource is specifically designed for document processing tasks, including extracting key information from receipts using Optical Character Recognition (OCR) and deep learning models.
+* Which data format is accepted by Azure AI Search when you're pushing data to the index? **JSON**
+* An **indexer converts documents into JSON** and forwards them to a search engine for indexing.
+* **Training**: This is the process of teaching a machine learning model to recognize patterns in data. During training, the model learns from a labeled dataset by adjusting its parameters to minimize the error between its predictions and the actual values.
+* **Inference**: This is the process of using a trained machine learning model to make predictions or decisions based on new input data. During inference, the model applies the learned patterns from the training phase to generate output values.
+* **Modeling**: This refers to the process of creating a machine learning model, which includes selecting the appropriate algorithm, defining the model architecture, and training the model on data. Modeling encompasses both the training and inference phases.
+* What is the process called when a machine learning model calculates an output value based on one or more input values?: **Inference**
+* What is a **neural network**?: A function that maps inputs to outputs based on learned weights
+* A **single layer of pixel** values in an image represents a **Grayscale image**. Grayscale image: A grayscale image has only one layer of pixel values, where each pixel represents a shade of gray. The pixel values range from 0 (black) to 255 (white), with varying shades of gray in between.
+* An **RGB image consists of three layers (or channels)** corresponding to the Red, Green, and Blue color components. Each pixel in an RGB image has three values, one for each color channel.
+* The machine learning model architecture commonly **used in computer vision for image classification is Convolutional Neural Networks (CNNs)**. These are specifically designed for processing grid-like data, such as images. CNNs use convolutional layers to automatically and adaptively learn spatial hierarchies of features from input images, making them highly effective for image classification tasks.
+* **Recurrent Neural Networks (RNNs):** These are primarily used for **sequential data, such as time series analysis and natural language processing**. They are NOT typically used for image classification tasks.
+* **Transformer Networks:** These are primarily used for natural language processing tasks, such as translation and text generation. While there are adaptations of transformers for vision tasks (like Vision Transformers), CNNs remain the most common architecture for image classification.
+* What is the primary function of transformers in natural language processing (NLP)?: Encoding language tokens as vector-based embeddings
+* What are multi-modal models in computer vision?: To provide prebuilt and customizable computer vision models
+* Which capability is supported by Azure AI Vision service?: Generating captions and descriptions of images
+* The purpose of Azure AI Vision's Read API is to extract **machine-readable text from images, PDFs, and TIFF files**. This is the primary function of the Read API. It uses Optical Character Recognition (OCR) to extract printed and handwritten text from various types of documents and images, converting it into a structured, machine-readable format. **Detect objects** in images: While Azure AI Vision can detect objects in images, this is not the specific purpose of the Read API. Object detection is a separate feature within the Azure AI Vision service. **Generate synthetic images:** This is not a function of the Read API. Generating synthetic images is typically done using generative models, **such as GANs (Generative Adversarial Networks),** and is not related to OCR.
+* What hierarchy is used to organize the results returned by the Azure AI Vision's OCR engine?: **Pages -> Lines -> Words:** This is the correct hierarchy. The OCR engine organizes the extracted text by pages, then breaks it down into lines, and finally into individual words. This structure helps in maintaining the context and layout of the text as it appears in the original document
+* In OCR, what are **bounding boxes used for? Marking areas of text in an image**
+* The purpose of authoring a model in conversational language understanding is to define **entities, intents, and utterances for training**. When authoring a model, you define: Entities: Specific pieces of information that the model needs to extract from user input (e.g., dates, names, locations). Intents: The purpose or goal behind a user's input (e.g., booking a flight, checking the weather). Utterances: Example phrases or sentences that users might say to express their intents. By defining these components, you train the model to understand and respond accurately to user inputs. **To connect client applications to prediction resources:** This is part of the deployment and integration process, not the authoring process. **To publish language models for client consumption:** This is the final step after authoring and training the model, where the model is made available for use by client applications.
 
-18. **Average Distance to Cluster Center:** This measures the average distance of all points in a cluster to the cluster center (centroid). It helps in evaluating the compactness of clusters.
+* What are the two primary capabilities supported by AI speech systems? : **Speech recognition and synthesis**
+** Speech recognition and transcription
+** Speech synthesis and natural language processing
+** Speech recognition and synthesis
+** Speech analysis and sentiment detection
 
-19. **Average Distance to Other Center:** This measures the average distance of points in one cluster to the centers of other clusters. It helps in evaluating the separation between clusters.
+* The main purpose of speech synthesis is to convert text to spoken output. 
+** To detect spoken patterns in audio files: This task is typically handled by speech recognition systems, which analyze audio files to identify and transcribe spoken words.
+** To generate phonetic transcriptions: This is also a function of speech recognition systems, where the spoken language is converted into phonetic symbols or text.
+** **To convert text to spoken output: This is the primary function of speech synthesis, also known as text-to-speech (TTS).** It involves generating audible speech from written text, allowing machines to "speak" the text in a natural-sounding voice.
+** To analyze prosodic features in speech: This task involves examining the rhythm, stress, and intonation of speech, which is more related to speech analysis and processing rather than synthesis.
 
-20. **Number of Points:** This simply counts the number of data points in each cluster. While it can provide some information about the distribution of data points across clusters, it is not a standard metric for evaluating clustering performance.
+* What are the two approaches provided by Azure AI Search to create and load JSON documents into an index? **Push method and Pull method**
+** Push method and Pull method
+** Export method and Import method
+** REST API method and SDK method
+** Source method and Target method
 
-21. **Tagging Images:** This involves identifying and labeling objects, scenes, and activities within an image. **Azure AI Vision**, for example, can automatically generate tags for images based on their content, making it easier to organize and search through large collections of images
+* What is the default search syntax for queries in Azure AI Search?: Simple query syntax
+* The role of attention layers in transformer models is to evaluate the semantic relationships between tokens.
+** **To predict the next token in a sequence: This task is typically handled by the overall architecture of the model, such as in language models like GPT**. While attention mechanisms contribute to this process, their primary role is not to predict the next token directly.
+** **To evaluate the semantic relationships between tokens: This is the correct role of attention layers**. Attention mechanisms allow the model to weigh the importance of different tokens in a sequence when making predictions. By evaluating the relationships between tokens, the model can focus on relevant parts of the input, improving its understanding and performance.
+** **To decompose training text into tokens: This task is handled by tokenization**, which is a preprocessing step that breaks down text into smaller units (tokens). Attention layers do not perform tokenization.
+** **To generate embeddings for tokens: This task is typically handled by embedding layers**, which convert tokens into dense vector representations. Attention layers use these embeddings to evaluate relationships but do not generate them.
 
-22. The Azure AI Vision's Read API provides results arranged in pages, lines, and words. This API is designed to extract text from images and documents, and it organizes the extracted text in a structured manner.
-
-23. To use **Azure AI Document Intelligence's prebuilt receipt model**, you should create an **Azure AI Document Intelligence or Azure AI services resource**. This resource is specifically designed for document processing tasks, including extracting key information from receipts using Optical Character Recognition (OCR) and deep learning models.
-24. Which data format is accepted by Azure AI Search when you're pushing data to the index? **JSON**
-25. An **indexer converts documents into JSON** and forwards them to a search engine for indexing.
-26. **Inference**: This is the process of using a trained machine learning model to make predictions or decisions based on new input data. During inference, the model applies the learned patterns from the training phase to generate output values.
-27. **Training**: This is the process of teaching a machine learning model to recognize patterns in data. During training, the model learns from a labeled dataset by adjusting its parameters to minimize the error between its predictions and the actual values.
-28. **Modeling**: This refers to the process of creating a machine learning model, which includes selecting the appropriate algorithm, defining the model architecture, and training the model on data. Modeling encompasses both the training and inference phases.
-29. What is the process called when a machine learning model calculates an output value based on one or more input values?: **Inference**
-30. What is a **neural network**?: A function that maps inputs to outputs based on learned weights
-31. A single layer of pixel values in an image represents a Grayscale image. Let's break down each option: RGB color hues: An RGB image consists of three layers (or channels) corresponding to the Red, Green, and Blue color components. Each pixel in an RGB image has three values, one for each color channel. Grayscale image: A grayscale image has only one layer of pixel values, where each pixel represents a shade of gray. The pixel values range from 0 (black) to 255 (white), with varying shades of gray in between.
-
-32. The machine learning model architecture commonly **used in computer vision for image classification is Convolutional Neural Networks (CNNs)**. **Recurrent Neural Networks (RNNs):** These are primarily used for **sequential data, such as time series analysis and natural language processing**. They are not typically used for image classification tasks. Convolutional Neural Networks (CNNs): These are specifically designed for processing grid-like data, such as images. CNNs use convolutional layers to automatically and adaptively learn spatial hierarchies of features from input images, making them highly effective for image classification tasks. Transformer Networks: These are primarily used for natural language processing tasks, such as translation and text generation. While there are adaptations of transformers for vision tasks (like Vision Transformers), CNNs remain the most common architecture for image classification.
-
-33. What is the primary function of transformers in natural language processing (NLP)?: Encoding language tokens as vector-based embeddings
-34. What are multi-modal models in computer vision?: To provide prebuilt and customizable computer vision models
-35. Which capability is supported by Azure AI Vision service?: Generating captions and descriptions of images
-
-36. The purpose of Azure AI Vision's Read API is to extract machine-readable text from images, PDFs, and TIFF files. Extract machine-readable text from images, PDFs, and TIFF files: This is the primary function of the Read API. It uses Optical Character Recognition (OCR) to extract printed and handwritten text from various types of documents and images, converting it into a structured, machine-readable format. **Detect objects** in images: While Azure AI Vision can detect objects in images, this is not the specific purpose of the Read API. Object detection is a separate feature within the Azure AI Vision service. **Generate synthetic images:** This is not a function of the Read API. Generating synthetic images is typically done using generative models, such as GANs (Generative Adversarial Networks), and is not related to OCR.
-37. What hierarchy is used to organize the results returned by the Azure AI Vision's OCR engine?: **Pages -> Lines -> Words:** This is the correct hierarchy. The OCR engine organizes the extracted text by pages, then breaks it down into lines, and finally into individual words. This structure helps in maintaining the context and layout of the text as it appears in the original document
-38.  In OCR, what are **bounding boxes used for? Marking areas of text in an image**
-39.  The purpose of authoring a model in conversational language understanding is to define entities, intents, and utterances for training. To define entities, intents, and utterances for training: This is the correct purpose. When authoring a model, you define: Entities: Specific pieces of information that the model needs to extract from user input (e.g., dates, names, locations). Intents: The purpose or goal behind a user's input (e.g., booking a flight, checking the weather). Utterances: Example phrases or sentences that users might say to express their intents. By defining these components, you train the model to understand and respond accurately to user inputs. To connect client applications to prediction resources: This is part of the deployment and integration process, not the authoring process. To publish language models for client consumption: This is the final step after authoring and training the model, where the model is made available for use by client applications.
-
-40.  What are the two primary capabilities supported by AI speech systems?
-* Speech recognition and transcription
-* Speech synthesis and natural language processing
-* Speech recognition and synthesis
-* Speech analysis and sentiment detection
-* Answer: **Speech recognition and synthesis**
-
-41. The main purpose of speech synthesis is to convert text to spoken output. 
-* To detect spoken patterns in audio files: This task is typically handled by speech recognition systems, which analyze audio files to identify and transcribe spoken words.
-* To generate phonetic transcriptions: This is also a function of speech recognition systems, where the spoken language is converted into phonetic symbols or text.
-* **To convert text to spoken output: This is the primary function of speech synthesis, also known as text-to-speech (TTS).** It involves generating audible speech from written text, allowing machines to "speak" the text in a natural-sounding voice.
-* To analyze prosodic features in speech: This task involves examining the rhythm, stress, and intonation of speech, which is more related to speech analysis and processing rather than synthesis.
-
-42. What are the two approaches provided by Azure AI Search to create and load JSON documents into an index?
-* Push method and Pull method
-* Export method and Import method
-* REST API method and SDK method
-* Source method and Target method
-Show Answer
-Push method and Pull method
-
-43. What is the default search syntax for queries in Azure AI Search?: Simple query syntax
-44. The role of attention layers in transformer models is to evaluate the semantic relationships between tokens. Let's break down each option:
-* To predict the next token in a sequence: This task is typically handled by the overall architecture of the model, such as in language models like GPT. While attention mechanisms contribute to this process, their primary role is not to predict the next token directly.
-* To evaluate the semantic relationships between tokens: This is the correct role of attention layers. Attention mechanisms allow the model to weigh the importance of different tokens in a sequence when making predictions. By evaluating the relationships between tokens, the model can focus on relevant parts of the input, improving its understanding and performance.
-* To decompose training text into tokens: This task is handled by tokenization, which is a preprocessing step that breaks down text into smaller units (tokens). Attention layers do not perform tokenization.
-* To generate embeddings for tokens: This task is typically handled by embedding layers, which convert tokens into dense vector representations. Attention layers use these embeddings to evaluate relationships but do not generate them.
-
-45. What is one way to access Azure OpenAI Service?
-By registering for limited access
-By downloading the Azure OpenAI Studio app
-By purchasing a subscription from the Microsoft Store
-All of the above
-Show Answer
-By registering for limited access
-
-46.
+* What is one way to access Azure OpenAI Service?: **By registering for limited access**
+** By registering for limited access
+** By downloading the Azure OpenAI Studio app
+** By purchasing a subscription from the Microsoft Store
+** All of the above
